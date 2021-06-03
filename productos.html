@@ -5,36 +5,36 @@
 		<title>MobleArt-Productos</title>
 		<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="bootstrap/css/bootstrap.css" />
-		<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />	
+		<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">	
 	    <meta name="viewport" content="width=device-width">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	</head>
   	<body >
-		<header class="headerpagina">
-		<nav>
-				<ul>
-					<li><a href="inicio.html">Inicio</a></li>
-					<li><a href="productos.html" >Productos</a></li>
-					<li><a href="contacto.html">Contacto</a></li>
-					<div><img id="logomobel" src="img/LOGOMOBELART.png"></div>
-				</ul>
-			</nav>
+		<header">
+			<nav>
+                <ul>
+                    <li><a href="inicio.html">Inicio</a></li>
+                    <li><a href="productos.html" >Productos</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <div><img id="logomobel" src="img/LOGOMOBELART.png"></div>
+                </ul>
+            </nav>
 		</header>
-		
-		<main>
-		<div class="separacion"></div>
-		<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/meeting.svg" alt="corporativo"/><p></p></button>
-		<button onclick="topFunction2()" id="myBtn2" title="Go to top2"><img src="img/office-table.svg" alt="oficina"/><p></p></button>
-		<button onclick="topFunction3()" id="myBtn3" title="Go to top3"><img src="img/home.svg" alt="casa"/><p></p></button>
+		<!--nav class="botonesproductos">
+			<ul>
+				<li><a href="#productos1">Corporativos</a></li>
+				<li><a href="#productos2">Oficina</a></li>
+				<li><a href="#productos3">Residencial</a></li>
+			</ul>
+		</nav-->
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/meeting.svg" alt="corporativo"/><p>corporativo</p></button>
+        <button onclick="topFunction2()" id="myBtn2" title="Go to top2"><img src="img/office-table.svg" alt="oficina"/><p>oficina</p></button>
+        <button onclick="topFunction3()" id="myBtn3" title="Go to top3"><img src="img/home.svg" alt="casa"/><p>casa</p></button>
 
-		<div id="botonesproductos">
-			<a href="#productos1">Corporativos</a>
-			<a href="#productos2">Oficina</a>
-			<a href="#productos3">Residencial</a>
-		</div>
-			
-		<h2>Productos Corporativos</h2>
+		<main id="mainproduc">
+			<h2>Productos Corporativos</h2>
 			<div class="row">
 				<div id="productos1" class="column">
 					<img src="img/mobiliarioespecial.png" alt="">
@@ -118,7 +118,6 @@
 			</div>
 		</main>
 		<script src="js/totop.js"></script>
-		<script src="js/botonesdespeglables.js"></script>
 	</body>
 </html>
      

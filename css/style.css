@@ -79,8 +79,9 @@ nav ul div{
 #logomobel{
     width: 100%;
     height: 25px;
-    margin-top: 5px;
+    padding: 2px 0;
     
+
 }
 
 /*pagina de entrada*/
@@ -93,7 +94,7 @@ nav ul div{
 
 .mySlides {
     display: none;
-    height: 75%;
+    height: 85%;
 }
 
 .mySlides img{
@@ -172,65 +173,41 @@ nav ul div{
     margin:0 auto;
 }
 
-/*.redessociales{
-    width: 50%;
-    height: auto;
-    float: right;
-    background-color: lightcoral;
-    opacity:1;
-}
 
-#twitter{
-    background-image: url("../img/twitter.png");
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-  background-size:cover;
-   background-color: lawngreen;
-}
-
-#insta{
-    background-image: url("../img/instagram.png");
-    height: 20px;
-    width: 20px;
-    border-radius: 50%;
-  
-   background-color: lawngreen;
-}
-
-#imgnosotros{
-    width: 95%;
-    margin-bottom: 10px;
-}*/
 
 /*Pagina productos */
-
-.separacion{
+#mainproduc{
+ margin-top: 50px;
+}
+/*.separacion{
     width: 100%;
     height: 20px;
 }
-#botonesproductos{
+.botonesproductos{
     width: 85%;
     height: auto;
-    background-color: black;
-    padding: 5px 0;
-    margin: 15px 7.5%;
+    background-color: #4b4a4a;
+    
+    margin: 0 7.5%;
+    position: fixed;
+    top: 50px;
+    opacity: inherit;
+    
 }
 
-#botonesproductos a{
+.botonesproductos a{
     text-decoration: none;
     color: white;
     font-size: 10px;
     text-align: center;
-    padding: 7px;
     
 }
 
-#botonesproductos a:hover{
+.botonesproductos a:hover{
     text-decoration: none;
     background-color: #646b63;
 }
-
+*/
 #myBtn{
     display: block; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
@@ -242,14 +219,14 @@ nav ul div{
     background-color: rgb(167, 167, 167); /* Set a background color */
     color: black; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
+    padding: 10px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
     font-size: 12px; /* Increase font size */
 }
 
 
 #myBtn2{
-    display: none; /* Hidden by default */
+    display: block; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 115px; /* Place the button at the bottom of the page */
     right: 10px; /* Place the button 30px from the right */
@@ -259,13 +236,13 @@ nav ul div{
     background-color: rgb(167, 167, 167); /* Set a background color */
     color: black; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
+    padding: 10px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
     font-size: 12px; /* Increase font size */
 }
 
 #myBtn3{
-    display: none; /* Hidden by default */
+    display: block; /* Hidden by default */
     position: fixed; /* Fixed/sticky position */
     bottom: 10px; /* Place the button at the bottom of the page */
     right: 10px; /* Place the button 30px from the right */
@@ -275,16 +252,22 @@ nav ul div{
     background-color:rgb(167, 167, 167); /* Set a background color */
     color: black; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 15px; /* Some padding */
+    padding: 10px; /* Some padding */
     border-radius: 10px; /* Rounded corners */
     font-size: 12px; /* Increase font size */
 }
 
 #myBtn img, #myBtn2 img, #myBtn3 img{
-    width: 30px;
+    width: 20px;
     height: auto
 }
 
+
+#myBtn p, #myBtn2 p, #myBtn3 p{
+    display: none;
+    color:white;
+
+}
 #myBtn:hover, #myBtn2:hover, #myBtn3:hover{
     background-color: #555; /* Add a dark-grey background on hover */
     
@@ -292,14 +275,14 @@ nav ul div{
 /*Pagina contacto*/
 
 .direccion{
-    background-color: black;
+    background-color:#4b4a4a;
     width: 100%;
     height: auto;
-    margin-top:15%;
+    margin-top:50px;
     color: white;
     opacity: inherit;
     position:relative;
-    z-index: 0;
+
     
 }
 
@@ -435,14 +418,27 @@ h3{
 
 /*productos*/
 
-#botonesproductos{
+/*#botonesproductos{
     padding: 10px 0;
 }
 #botonesproductos a{
     font-size: 15px;
     padding: 10px;
+}*/
+
+#mainproduc{
+    margin-top: 60px;
 }
 
+#myBtn{
+    
+    padding: 15px; /* Some padding */
+ 
+}
+#myBtn img, #myBtn2 img, #myBtn3 img{
+    width: 30px;
+    height: auto
+}
 
 /*contacto*/
 
@@ -518,11 +514,24 @@ nav ul li a{
 
 }
 /*productos*/
-#botonesproductos{
+/*#botonesproductos{
     margin-top: 7%;
 }
 #botonesproductos a{
     font-size: 17px;
+}*/
+#mainproduc{
+    margin-top: 80px;
+}
+
+#myBtn{
+    
+    padding: 15px; /* Some padding */
+ 
+}
+#myBtn img, #myBtn2 img, #myBtn3 img{
+    width: 35px;
+    height: auto
 }
 .oficina{
     width: 50%;
@@ -663,10 +672,32 @@ nav ul li a{
     }
 
     /*productos*/
-    #botonesproductos a{
+    /*#botonesproductos a{
         font-size: 25px;
+    }*/
+    #mainproduc{
+        margin-top: 200px;
     }
     
+    #myBtn{
+        
+        padding: 20px; /* Some padding */
+     
+    }
+    #myBtn2{
+        
+        padding: 20px; /* Some padding */
+     
+    }
+    #myBtn3{
+        
+        padding: 20px; /* Some padding */
+     
+    }
+    #myBtn img, #myBtn2 img, #myBtn3 img{
+        width: 70px;
+        height: auto
+    }
 }
 
 
