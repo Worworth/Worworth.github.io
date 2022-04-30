@@ -12,112 +12,127 @@
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	</head>
   	<body >
-		<header">
+		<div class="header">
+			<img id="logomobel" src="img/LOGOMOBELART.jpg">
+		</div>
+		<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/meeting.png" alt="corporativo"/><span>Corporativo</span></button>
+        <button onclick="topFunction2()" id="myBtn2" title="Go to top2"><img src="img/office-table.png" alt="oficina"/><span>Oficina</span></button>
+        <button onclick="topFunction3()" id="myBtn3" title="Go to top3"><img src="img/home.png" alt="casa"/><span>Casa</span></button>
+		<main>
 			<nav>
-                <ul>
-                    <li><a href="inicio.html">Inicio</a></li>
-                    <li><a href="productos.html" >Productos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <div><img id="logomobel" src="img/LOGOMOBELART.png"></div>
-                </ul>
+            	<a href="inicio.html">Inicio</a>
+                <a href="productos.html" >Productos</a>
+                <a href="contacto.html">Contacto</a>
+                
             </nav>
-		</header>
-		<!--nav class="botonesproductos">
-			<ul>
-				<li><a href="#productos1">Corporativos</a></li>
-				<li><a href="#productos2">Oficina</a></li>
-				<li><a href="#productos3">Residencial</a></li>
-			</ul>
-		</nav-->
-		<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/meeting.svg" alt="corporativo"/><p>corporativo</p></button>
-        <button onclick="topFunction2()" id="myBtn2" title="Go to top2"><img src="img/office-table.svg" alt="oficina"/><p>oficina</p></button>
-        <button onclick="topFunction3()" id="myBtn3" title="Go to top3"><img src="img/home.svg" alt="casa"/><p>casa</p></button>
+			<div class="tab">
+				<button class="tablinks" onclick="openCity(event, 'London')"  id="defaultOpen">Coorporativo</button>
+				<button class="tablinks" onclick="openCity(event, 'Paris')">Oficina</button>
+				<button class="tablinks" onclick="openCity(event, 'Tokyo')">Residencial</button>
+			</div>
+			<div id="cir" class="circulo"></div>
+			<div id="London" class="tabcontent">
+				<h3>Corporativo</h3>
+				<div class="row">
+					<div id="productos1" class="column kl">
+						<img id="" src="img/corporativo.jpg" alt="">
+						<img id="" src="img/corporativo3.jpg" alt="">
+						
+					</div>
+					<div class="column kl">
+						<img src="img/corporativo1.jpg" alt="">
+						<img id="" src="img/corporativo4.jpeg" alt="">
+					</div>
+					<div class="column kl">
+						<img src="img/corporativo2.jpg" alt="">
+					</div>	
+				</div>
+			</div>
+			  
+			<div id="Paris" class="tabcontent">
+				<h2>Oficina</h2>
+				<div class="oficina">
+					<h3>Sillas</h3>
+					<div class="row">
+						<div id="productos2" class="column mop">
+							<img id="myImg2" src="img/AstonA (1).png" alt="">
+							<img id="myImg3"src="img/AstonM (1.5.5).png" alt="">
+							<img src="img/IndiaApa (1).png" alt="">
+							<img src="img/Cat20 (1).jpg" alt="">
+							<img src="img/Cat20 (4).jpg" alt="">
+							<img src="img/CosmosCPA (1).png" alt="">
+							<img src="img/Mariner (1).jpg" alt="">
+						</div>
+						<div class="column mop">
+							<img id="myImg4"src="img/AstonA (2.5).png" alt="">
+							<img id="myImg5"src="img/AstonM (2.5).png" alt="">
+							<img src="img/IndiaApa (1).jpg" alt="">
+							<img src="img/Cat20 (1).png" alt="">
+							<img src="img/Cat20 (2).jpg" alt="">
+							<img src="img/CosmosCPA (2).png" alt="">
+							<img src="img/Mariner (2).jpg" alt="">
+						</div>
+						<div class="column mop">
+							<img id="myImg6"src="img/AstonA (3.5).png" alt="">
+							<img id="myImg7"src="img/AstonM( 1.5).png" alt="">
+							<img src="img/IndiaApa (2).png" alt="">
+							<img src="img/Cat20 (2).png" alt="">
+							<img src="img/Cat20 (3).jpg" alt="">
+						</div>
+					</div>
+				</div>
+				<div class="oficina">
+					<h3>Escritorios</h3>
+					<div class="row">
+						<div id="productos2" class="column mop">
+							<img id=""src="img/puestosoperativos2.png" alt="escritorios enfrentados">
+							<img id=""src="img/puestosoperativos4.png" alt="escritorio simple">
+						</div>
+						<div class="column">	
+							
+						</div>
+						<div class="column">	
+							
+						</div>
+					</div>
+				</div>
+			</div>
+			  
+			<div id="Tokyo" class="tabcontent">
+				<h3>Residencial</h3>
+				<div class="row">	
+					<div id="productos3" class="column kl" >
+						<img id=""src="img/hogar2.png" alt="">
+					</div>
+					<div class="column kl">
+						<img id=""src="img/hogar3.png" alt="">
+					</div>
+					<div class="column kl">
+						<img id=""src="img/cocina 2.jpg" alt="">
+					</div>
+				</div>
+			</div>
+			
+			<!--div id="myModal" class="modal"-->
 
-		<main id="mainproduc">
-			<h2>Productos Corporativos</h2>
-			<div class="row">
-				<div id="productos1" class="column">
-					<img src="img/mobiliarioespecial.png" alt="">
-					<img src="img/mobiliarioespecial2.png" alt="">
-					<img src="img/mobiliarioespecial3.png" alt="">
-			
-				</div>
-				<div class="column">
-					<img src="img/mobiliarioespecial.png" alt="">
-					<img src="img/mobiliarioespecial.png" alt="">
-					<img src="img/mobiliarioespecial.png" alt="">
-					
-				</div>
-				<div class="column">
-					<img src="img/mobiliarioespecial.png" alt="">
-					<img src="img/mobiliarioespecial.png" alt="">
-					<img src="img/mobiliarioespecial.png" alt="">
-				
-				</div>	
-			</div>
-			<hr>
-			<h2>Oficina</h2>
-			
-			<div class="oficina">
-				<h3>Sillas</h3>
-				<div class="row">
-					<div id="productos2" class="column">
-						<img src="img/mobiliarioespecial.png" alt="">
-						<img src="img/mobiliarioespecial2.png" alt="">
-						<img src="img/mobiliarioespecial3.png" alt="">
-						
-					</div>
-					<div class="column">	
-						<img src="img/mobiliarioespecial.png" alt="">
-						<img src="img/mobiliarioespecial2.png" alt="">
-						<img src="img/mobiliarioespecial2.png" alt="">
-						
-					</div>
-				</div>
-			</div>
-			<div class="oficina">
-				<h3>Escritorios</h3>
-				<div class="row">
-					<div id="productos2" class="column">
-					<img src="img/puestosoperativos2.png" alt="escritorios enfrentados">
-						<img src="img/puestosoperativos4.png" alt="escritorio simple">
-						
-						<img src="img/mobiliarioespecial3.png" alt="">
-						<img src="img/mobiliarioespecial2.png" alt="">
-						<img src="img/mobiliarioespecial2.png" alt="">
-				
-					</div>
-					<div class="column">	
-						<img src="img/mobiliarioespecial2.png" alt="">
-						<img src="img/mobiliarioespecial2.png" alt="">
-						<img src="img/mobiliarioespecial2.png" alt="">
-					</div>
-				</div>
-			</div>
-			<hr>
-			<h2>Residencial</h2>
-			<div class="row">	
-				<div id="productos3" class="column" >
-					<img src="img/hogar.png" alt="mueble cocina">
-					<img src="img/hogar4.png" alt="mueble estanteria">
-					<img src="img/mobiliarioespecial3.png" alt="">
-	
-				</div>
-				<div class="column">
-					<img src="img/hogar2.png" alt="cocina">
-					<img src="img/cocina 2.jpg" alt="">
-					<img src="img/estanteria.jpg" alt="">
+				<!-- The Close Button >
+				<span class="close">&times;</span-->
+			  
+				<!-- Modal Content (The Image)>
+				<img class="modal-content" id="img01"-->
+			  
+				<!-- Modal Caption (Image Text)>
+				<div id="caption"></div>
+			</div-->
+			<div id="cir2" class="circulo"></div>
 		
-				</div>
-				<div class="column">
-					<img src="img/hogar3.png" alt="cocina">
-					<img src="img/armario.jpg" alt="">
-					<img src="img/mobiliarioespecial3.png" alt="">
-
-				</div>
-			</div>
 		</main>
+		
 		<script src="js/totop.js"></script>
+		<script>
+			// Get the element with id="defaultOpen" and click on it
+			document.getElementById("defaultOpen").click();
+			</script>
 	</body>
 </html>
      

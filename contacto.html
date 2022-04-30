@@ -3,8 +3,6 @@
   <head>
     	<meta charset="utf-8">
 		<title> Mobel Art</title>
-	
-		
 		<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="bootstrap/css/bootstrap.css" />
         <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
@@ -15,30 +13,33 @@
 
   </head>
   <body >
-		<header>
-            <nav>
-                <ul>
-                    <li><a href="inicio.html">Inicio</a></li>
-                    <li><a href="productos.html" >Productos</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
-                    <div><img id="logomobel" src="img/LOGOMOBELART.png"></div>
-                </ul>
-            </nav>
-		</header>
-		<nav class="direccion" >
-			<ul>
-				<li><a href="contacto.html">Contacto</a></li>
-				<li><a href="dondeestamos.html">Dónde estamos</a></li>
-			</ul>
+		<div class="header">
+			<img id="logomobel" src="img/LOGOMOBELART.jpg">
+		</div>  
+		<nav>
+			<a href="inicio.html">Inicio</a>
+           	<a href="productos.html" >Productos</a>
+            <a href="contacto.html">Contacto</a>
+        
 		</nav>
-		<section class="container">
-			
+		<nav class="direccion" >
+			<a href="contacto.html">Contacto</a>
+			<a href="dondeestamos.html">Dónde estamos</a>
+		</nav>
+		<div class="container">
+			<h2>CONTACTO</h2>
+			<div class="pop">
+				<p>
+					Cualquier consulta puedes enviarnos un correo
+					Tambien comunicandote por telefono
+					<ul>
+						<li>Telefono: (+15)</li>
+					</ul>
+				</p>
+			</div>	
 			<div id="divform">
-				<h2>CONTACTO</h2>
-				<?php
-					if (!isset($_POST['email'])) {
-					?>
-					<form action="<?=$_SERVER['PHP_SELF']?>" method="post">
+				
+					<form action="https://formsubmit.co/b4ei.msarzal@gmail.com" method="post">
 						<label><b>Nombre:</b></label>
 						
 						<input name="nombre" placeholder="Nombre" type="text" required/>
@@ -60,7 +61,13 @@
 						<textarea name="mensaje" rows="6" cols="50"></textarea>
 						
 						<input type="submit" value="Enviar" />
+						
+						<input type="hidden" name="_next" value="http://localhost/MobelArt/contacto.html" >
+						<input type="hidden" name="_captcha" value="false">
 					</form>
+					<!--<?=$_SERVER['PHP_SELF']?>?php
+					if (!isset($_POST['email'])) {
+					?>
 					<?php
 					}else{
 					$mensaje="Mensaje del formulario de contacto de mobelart";
@@ -74,12 +81,13 @@
 					$asunto = "Mensaje enviado por: ".$_POST['nombre'];
 					mail($destino,$asunto,$mensaje,"FROM: $remitente");
 					?>
-					<p><strong>Mensaje enviado.</strong></p>
 					<?php
 					}
-				?>
+				?-->
 			</div>
-		</section>	
+		</div>
+
+		<footer class="footer">hsgffg</footer>
    </body>
 </html>
      
