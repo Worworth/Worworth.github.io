@@ -1,10 +1,18 @@
-.header{
+
+*{font-family: Arial, Helvetica, sans-serif;}
+
+header{
     width: 100%;
+    height: 30px;
+}
+.header{
+    width: 35%;
     height: auto;
+    float: right;
 }
 .header img{
-    width: 30%;
-    height: 30%;
+    width: 100%;
+    height: 100%;
 }
 footer{
     width: 100%;
@@ -12,41 +20,37 @@ footer{
     background-color: black;
     opacity: 0.8;
     color: #ffffff;
-
 }
 main{
     width: 100%;
     height: 100%;
 }
-
-h2{color:white;}
-
-
-h3{
-    font-size: 15px;
-    text-align: center;
-    
-    font-size: 12px;
+h2{
+    color:white;
 }
-
+h3{
+    font-size: 20px;
+    text-align: center;
+}
 nav{
     width: 100%;
     height: auto;
-    padding:20px 0;
-    background-color: rgb(185, 147, 90);
+    background-color: #F5874F;
+    clear: left;
+    padding: 10px 0;
     
 }
-
 nav a{
+    width: auto;
     color:white;
     text-decoration: none;
     text-align: center;
-    padding: 20px;
+    padding: 15px;
+    font-size: 20px;
+    font-weight: 200;
 }
-
-
 nav a:hover{
-    background-color: rgba(185, 147, 90, 0.3);
+    background-color: #b9935a4d;
     opacity: 0.5;
     text-decoration: none;
 
@@ -57,107 +61,120 @@ nav a:hover{
     width: 100%;
     height:100%;
     position: fixed;
+    background-color: #000000;
+    
 }
+.slideshow-container::after{
+    content: "";
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
 
+}
+.empezar{
+    width: 20%;
+    height: 120px;
+    position: absolute;
+    top: 55%;
+    right: 20%;
+    z-index: 2;
+    text-align: center;
+    padding: 10px;
+}
+.empezar p{
+    width: 100%;
+    color: #ffffff;
+    font-size: 25px;
+    margin: 15px 0;
+}
+.empezar a{
+    padding: 10px;
+    border: none;
+    background-color: #F5874F;
+    color: #ffffff;
+}
+.empezar:hover + .slideshow-container::after{
+    background-color: #00000080;
+}
 .mySlides {
     display: none;
-    height: 85%;
+    height: 100%;
 }
-
 .mySlides img{
     width: 100%;
     height: 100%;
 }
-
 .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 5s;
+    -webkit-animation-duration: 3s;
     animation-name: fade;
-    animation-duration: 5s;
+    animation-duration: 3s;
 }
-
 @-webkit-keyframes fade {
-    from {opacity: .6}
+    from {opacity: .3}
     to {opacity: 1}
 }
-
 @keyframes fade {
-    from {opacity: .6}
+    from {opacity: .3}
     to {opacity: 1}
 }
 
 /*Inicio*/
-.presentacion{
-    width: 85%;
-    font-size: 30px;
-    text-align:center;
-    color:white;
-    background-color: rgb(63, 82, 159);
-    padding: 5px;
-    border: 2px solid  rgb(63, 82, 159);
-    border-bottom-width: 10px;
-    -webkit-border-radius: 0 10px 100px 0;
-    border-radius: 0 10px 100px 0;
-    -o-text-overflow: ellipsis;
-    text-overflow: ellipsis;
-    margin: 1.5% 0 0 2.5%;
-}
 .nosotros{
-    background-color: rgba(52, 56, 55);
+    background-color: #848688;
     width: 95%;
     height: auto;
-    margin: 0 2.5%;
+    margin: 0 auto;
 }
 .nosotros div{
 
     height: auto;
-    width: auto;
-    padding: 10px 2%;
+    width: 100%;
     color: white;
     font-size: 20px;
 }
-.nosotros img{
-   padding: 2.5% 0 2.5% 25px;
-   width: 85%;
+.nosotros div p{
+    padding: 20px;
 }
-
+.nosotros img{
+    margin: 5% 7.5%;
+    width: 85%;
+    border: 3px solid  #ffff;
+}
 .nosotros-variado{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    background-color:  rgb(63, 82, 159);
+    background-color: #848688;
     width: 95%;
     height: auto;
-    margin: 1.5% 2.5%;
+    margin: 1.5% auto;
 }
-
 .nosotros-variado img{
     width: 85%;
-    border: 7px solid rgba(144, 145, 149);
+    border: 2px solid #ffffff;
     -webkit-border-radius: 20px;
     border-radius: 20px;
     margin:1.5%;
-
-
 }
 .listaempre{
     width: 85%;
     font-size: 20px;
     text-align:center;
     color:white;
-    background-color: rgb(63, 82, 159);
+    background-color:#848688;
     padding: 5px;
-    border: 2px solid  rgb(63, 82, 159);
     border-bottom-width: 10px;
     -webkit-border-radius: 10px 0px 0 100px;
-    border-radius: 10px 0 0 100px;
-    margin: 0 0 0 31.6%;
-   
+    border-radius: 0 10px 100px 0;
+    margin-left:2.5%;
 }
-
 .listaempresas{
-    background-color:  rgb(63, 82, 159);
+    background-color: #848688;
     width: auto;
     height: auto;
     margin: 0 2.5%;
@@ -165,16 +182,14 @@ nav a:hover{
     padding: 1.5%;
 }
 
-
 /*Productos*/
 .circulo{
     content: "";
-    background-color:rgba(63, 82, 159, 0.5) ;
+    background-color:#3f529f80 ;
     width: 200px;
     height: 200px;
     border-radius: 100%;
     z-index: -1;
-
 }
 #cir{
     position: absolute;
@@ -183,6 +198,12 @@ nav a:hover{
 #cir2{
     position: absolute;
     right: 0;
+}
+.tabcontent {
+    display: none;
+    padding: 10px 12px;
+    border-top: none;
+    background-color: #848688;
 }
 .tablinks{
     background-color: #4b4a4a;
@@ -207,12 +228,13 @@ nav a:hover{
     width: 100%;
     height: 250px;
     margin-top: 8px;
-   
+    border: 2px solid #ffffff;
 }
 .mop img{
-    width: 80%;
-    height: 250px;
-    
+    width: 250px;
+    height: 300px;
+    margin: 0 auto;
+    border: 2px solid #ffffff;
 }
 #myBtn{
     display: block; 
@@ -222,15 +244,13 @@ nav a:hover{
     z-index: 1;
     border: none; 
     outline: none; 
-    background-color: #D49D4A; 
+    background-color: #F5874F;
     color: black; 
     cursor: pointer; 
     padding: 10px; 
     border-radius: 10px; 
     font-size: 12px; 
 }
-
-
 #myBtn2{
     display: block; 
     position: fixed; 
@@ -239,14 +259,13 @@ nav a:hover{
     z-index: 1; 
     border: none; 
     outline: none; 
-    background-color: #9E7537;
+    background-color: #F5874F;
     color: black; 
     cursor: pointer; 
     padding: 10px; 
     border-radius: 10px; 
     font-size: 12px; 
 }
-
 #myBtn3{
     display: block; 
     position: fixed;
@@ -255,7 +274,7 @@ nav a:hover{
     z-index: 1; 
     border: none; 
     outline: none;
-    background-color:#946448; 
+    background-color: #F5874F;
     color: black; 
     cursor: pointer; 
     padding: 10px; 
@@ -263,9 +282,7 @@ nav a:hover{
     font-size: 12px;
 }
 #myBtn{
-        
     padding: 15px; 
-
 }
 #myBtn img, #myBtn2 img, #myBtn3 img{
     width: 30px;
@@ -282,9 +299,14 @@ nav a:hover{
 #myBtn:hover img, #myBtn2:hover img, #myBtn3:hover img{
     display: none;
 }
-
 #myBtn:hover, #myBtn2:hover, #myBtn3:hover{
-    background-color: #9E7537;
+    background-color: #be6d44;
+}
+@media screen and (max-width: 600px) {
+    .column {
+      flex: 100%;
+      max-width: 100%;
+    }
 }
 @media screen and (max-width: 800px) {
     .column {
@@ -293,12 +315,6 @@ nav a:hover{
     }
 }
 
-@media screen and (max-width: 600px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-}
 /*Contacto*/
 .direccion{
     background-color:#4b4a4a;
@@ -309,43 +325,56 @@ nav a:hover{
   
 
 }
-
 .direccion a{
     width:40%;
     padding: 0 10%;
 }
-
 .container {
+    display: none;
     width:85%;
-    height: auto;
-    border-radius: 5px;
-    padding: 20px;
+    height: 600px;
+    border-radius: 0 0 5px 5px;
     position: relative;
     margin:20px auto;
+    margin-top: -20px ;
     color: white;
     background-color: #4b4a4a;
-
+}
+.minimenu{
+    width: 85%;
+    height: auto;
+    margin: 20px auto;
+    font-size: 0;
+}
+.minimenu button{
+    background-color: #F5874F;
+    width: 50%;
+    text-align: center;
+    border: none;
+    color: #ffffff;
+    padding: 20px;
+    font-size: 15px;
+    /*transition: all .3s;*/
+    transition: box-shadow .15s,transform .15s;
 }
 
-.container h2{
-    background-color:  rgb(63, 82, 159);
-    padding: 20px;
-    margin:-20px 0 20px -20px;
-    width: 48%;
-    text-align: center;
+.minimenu button:active {
+    color: #c44e13;
+    box-shadow: #faa479 0 3px 7px inset;
+    transform: translateY(2px);
+
 }
 .pop{
     width: 100%;
+    padding-left: 20px;
 }
 #divform{
     width:100%;
-    margin-top:25px ;
+ 
 }
-
 input{
     color: black;
 }
-
 input[type=text]{
     width:100%; 
     padding: 12px; 
@@ -356,7 +385,6 @@ input[type=text]{
     margin-bottom: 16px; 
     resize: vertical;
 }
-
 input[type=email] {
     width:100%; 
     padding: 12px; 
@@ -367,12 +395,9 @@ input[type=email] {
     margin-bottom: 16px; 
     resize: vertical;
 }
-
 textarea{
     width: 100%;
 }
- 
-
 input[type=submit] {
     background-color: #4CAF50;
     color: white;
@@ -381,127 +406,84 @@ input[type=submit] {
     border-radius: 4px;
     cursor: pointer;
 }
-  
-
 input[type=submit]:hover {
     background-color: #45a049;
 }
-  
-
-#dondeestamos{
-    width: 90%;
-    margin: 5% 5%;
+.ubi{
+    height: 900px;
 }
-
-#dondeestamos div p{
-    width: 100%;
+.ubi div h3{
+    padding-top: 10px;
+}
+.ubi div p{
     text-align: center;
-    margin-bottom: 5%;
-    font-size: 20px;
+    font-size: 16px;
+    padding: 10px;
 }
-
-#dondeestamos iframe{
-    width: 100%;
-}
-
-
-@media screen and (max-width: 800px) {
-
-
+.mapita{
+    width: 90%;
+    height: 90%;
+    padding: 0 5%;
 }
 
 @media screen and (min-width:47em){
- 
-    nav a{
-     
-        font-size: 25px;
 
+    nav a{
+        font-size: 25px;
+    }
+    header{
+        height: 55px;
     }
 
- /*inicio*/
+    /*inicio*/
     .nosotros div{
         font-size: 23px;
     }
-
     .listaempresas {
         font-size:20px ;
     }
 
     /*Contacto*/
-  
 
 }
 
 @media screen and (min-width:60em){
+
     
     nav a{
-     
         font-size: 27px;
-
+    }
+    header{
+        height: 75px;
     }
 
- /*inicio*/
-    .presentacion{
-        width: 65%;
-        font-size: 40px;
-    }
-
-    .nosotros div{
-        font-size: 30px;
-    }
+    /*inicio*/
     .listaempre{
         font-size: 25px;
     }
     .listaempresas {
         font-size:25px ;
     }
-
+    .minimenu button{
+        cursor: pointer;
+    }
+    #divform{
+        width:50%;
+        float:right;
+        padding: 20px;
+    }
 }
 
 @media screen and (min-width:1440px){
 
-    nav a{
-    
-        font-size: 20px;
-
+    header{
+        height: 130px;
     }
 
     /*Entrada*/
-    .slideshow-container {
-        width: 100%;
-        height:100%;
-        position: fixed;
-    }
-    
-    .mySlides {
-        display: none;
-        height: 85%;
-    }
-    
-    .mySlides img{
-        width: 100%;
-        height: 100%;
-    }
-    
-    /*Inicio*/
-    .presentacion{
-        width: 65%;
-        font-size: 35px;
-    }
-    .nosotros div{
-        float:left;
-        width: 45%;
-        font-size: 20px;
-    }
-    .nosotros img{
-       width: 45%;
-    }
-    
     .nosotros-variado img{
-    
         width: 42.5%;
-      
-    }   
+    }
     .listaempre{
         width: 65%;
         font-size: 30px;
@@ -509,228 +491,52 @@ input[type=submit]:hover {
     .listaempresas{
       font-size: 15px;
     }
+
     /*Productos*/
     .circulo{
-        content: "";
-        background-color:rgba(63, 82, 159, 0.5) ;
         width: 400px;
         height: 400px;
-        border-radius: 100%;
-        z-index: -1;
-    
     }
-    #cir{
-        position: absolute;
-        left:0%;
-    }
-    #cir2{
-        position: absolute;
-        right: 0;
-    }
-    .tablinks{
-        background-color: #4b4a4a;
-        border: none;
-        color: #ffffff;
-        padding: 5px;
-        margin-top: 5px;
-    }
-    .row{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-    }
-    
-    .column{
-        width: 30%;
-        height: auto;
-    }
-    .kl img{
-        width: 100%;
-        height: 300px;
-    }
-    .mop img{
-        width: 100%;
-        height: 400px;
-    }
-    #myBtn{
-        display: block; 
-        position: fixed; 
-        bottom: 225px; 
-        right: 10px; 
-        z-index: 1;
-        border: none; 
-        outline: none; 
-        background-color: #D49D4A; 
-        color: black; 
-        cursor: pointer; 
-        padding: 10px; 
-        border-radius: 10px; 
-        font-size: 12px; 
-    }
-    
-    
-    #myBtn2{
-        display: block; 
-        position: fixed; 
-        bottom: 115px;
-        right: 10px;
-        z-index: 1; 
-        border: none; 
-        outline: none; 
-        background-color: #9E7537;
-        color: black; 
-        cursor: pointer; 
-        padding: 10px; 
-        border-radius: 10px; 
-        font-size: 12px; 
-    }
-    
-    #myBtn3{
-        display: block; 
-        position: fixed;
-        bottom: 10px;
-        right: 10px; 
-        z-index: 1; 
-        border: none; 
-        outline: none;
-        background-color:#946448; 
-        color: black; 
-        cursor: pointer; 
-        padding: 10px; 
-        border-radius: 10px; 
-        font-size: 12px;
-    }
-    #myBtn{
-            
-        padding: 15px; 
-    
-    }
-    #myBtn img, #myBtn2 img, #myBtn3 img{
-        width: 30px;
-        height: auto
-    }
-    #myBtn span, #myBtn2 span, #myBtn3 span{
-        display: none;
-        color: white;
-        font-size: 20px;
-    }
-    #myBtn:hover span, #myBtn2:hover span, #myBtn3:hover span {
-        display: block;
-    }
-    #myBtn:hover img, #myBtn2:hover img, #myBtn3:hover img{
-        display: none;
-    }
-    
-    #myBtn:hover, #myBtn2:hover, #myBtn3:hover{
-        background-color: #9E7537;
-    }
-    
+
     /*Contacto*/
-    .direccion{
+    /*.direccion{
         background-color:#4b4a4a;
-        width: 90%;
+        width: 100%;
         height: auto;
         color: white;
         opacity: inherit;
         position:relative;
-        padding: 0 5%;
-    
     }
-    
     .direccion a{
-        width:40%;
-    
-    }
-    
-    .container {
+        font-size: 20px;
+    }*/
+    /*.container {
         width:85%;
-        height:520px;
+        height:600px;
         border-radius: 5px;
-        /*background-image: url("../img/unknown2.png");
-        background-repeat: no-repeat;
-        background-size: cover;*/
         padding: 20px;
         position: relative;
         margin:20px auto;
-    
         color: white;
         background-color: #4b4a4a;
-    
-    }
-    
-    .container h2{
-        background-color:  rgb(63, 82, 159);
+    }*/
+    /*.container h2{
+        background-color:  #3f529f;
         padding: 20px;
         margin:-20px 0 20px -20px;
         width: 48%;
         text-align: center;
-    }
-    
-    #divform{
-        width:50%;
-        margin:0 auto;
-        margin-top: -20px;
-        float:right;
-    }
-    
-    input{
-        color: black;
-    }
-    
-    input[type=text]{
-        width:100%; 
-        padding: 12px; 
-        border: 1px solid #ccc; 
-        border-radius: 4px; 
-        box-sizing: border-box; 
-        margin-top: 6px; 
-        margin-bottom: 16px; 
-        resize: vertical;
-    }
-    
-    input[type=email] {
-        width:100%; 
-        padding: 12px; 
-        border: 1px solid #ccc;
-        border-radius: 4px; 
-        box-sizing: border-box; 
-        margin-top: 6px;
-        margin-bottom: 16px; 
-        resize: vertical;
-    }
-    
-    textarea{
-        width: 100%;
-    }
-     
-    
-    input[type=submit] {
-        background-color: #4CAF50;
-        color: white;
-        padding: 12px 20px;
-        border: none;
-        border-radius: 4px;
-        cursor: pointer;
-    }
-      
-    
-    input[type=submit]:hover {
-        background-color: #45a049;
-    }
-      
-    
+    }*/
     #dondeestamos{
         width: 90%;
         margin: 5% 5%;
     }
-    
     #dondeestamos div p{
         width: 100%;
         text-align: center;
         margin-bottom: 5%;
         font-size: 20px;
     }
-    
     #dondeestamos iframe{
         width: 100%;
     }
@@ -738,7 +544,10 @@ input[type=submit]:hover {
 }
 
 @media screen and (min-width:2560px){
-    
+   
+    header{
+        height: 180px;
+    }
 
 }
 
