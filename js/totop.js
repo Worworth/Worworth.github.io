@@ -14,8 +14,11 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 function topFunction2() {
-  var elenm =document.getElementByTag("productos2");
-  elenm.scrollIntoView()
+  //var elenm =document.getElementByTag("productos2");
+  document.body.scrollTop = 0; // For Safari
+  document.documentElement.scrollTop = 0;
+  //elenm.scrollIntoView()
+
 }
 function topFunction3() { 
   var elenm =document.getElementById("productos3");

@@ -9,20 +9,25 @@
 		<link rel="preconnect" href="https://fonts.googleapis.com">
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	</head>
   	<body>
 		<header>
 			<div class="header"><img id="logomobel" src="img/LOGO MOBELART.jpg"></div>
 		</header>
-		<nav>
+		<nav class="topnav" id="myTopnav">
 			<a href="inicio.html">Inicio</a>
-			<a href="propuestas.html">Propuestas</a>
+			<a href="trabajos.html">Trabajos</a>
 			<a href="accesorios.html">Accesorios</a>
 			<a href="contacto.html">Contactos</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			  </a>
 		</nav>
 		<main>
-			<!--h2 class="presentacion">Nosotros</h2-->
 			<div class="nosotros">
 				<div>
 					<p>
@@ -85,6 +90,7 @@
 			</div>
 		</main>
 		<footer><p>Copyright © 2022 Mobel Art. Todos los derechos reservados.</p></footer>
+		<script src="js/menu.js"></script>
 	</body>
 </html>
     

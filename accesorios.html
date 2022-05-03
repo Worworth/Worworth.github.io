@@ -7,7 +7,8 @@
 		<link rel="stylesheet" type="text/css" media="all" href="bootstrap/css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">	
-	    <meta name="viewport" content="width=device-width">
+	    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	</head>
@@ -15,44 +16,21 @@
 		<header>
 			<div class="header"><img id="logomobel" src="img/LOGO MOBELART.jpg"></div>
 		</header>
-		<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/meeting.png" alt="corporativo"/><span>Corporativo</span></button>
-        <button onclick="topFunction2()" id="myBtn2" title="Go to top2"><img src="img/office-table.png" alt="oficina"/><span>Oficina</span></button>
-        <button onclick="topFunction3()" id="myBtn3" title="Go to top3"><img src="img/home.png" alt="casa"/><span>Casa</span></button>
+		
+        <button onclick="topFunction2()" id="myBtn2" title="Go to top2"><img src="img/office-table.png" alt="oficina"/><span>Arriba</span></button>
+		<nav class="topnav" id="myTopnav">
+			<a href="inicio.html">Inicio</a>
+			<a href="trabajos.html">Trabajos</a>
+			<a href="accesorios.html">Accesorios</a>
+			<a href="contacto.html">Contactos</a>
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			  </a>
+		</nav>
 		<main>
-			<nav>
-				<a href="inicio.html">Inicio</a>
-				<a href="propuestas.html">Propuestas</a>
-				<a href="accesorios.html">Accesorios</a>
-				<a href="contacto.html">Contactos</a>
-			</nav>
-			<div class="tab">
-				<button class="tablinks" onclick="openCity(event, 'London')"  id="defaultOpen">Coorporativo</button>
-				<button class="tablinks" onclick="openCity(event, 'Paris')">Oficina</button>
-				<button class="tablinks" onclick="openCity(event, 'Tokyo')">Residencial</button>
-			</div>
 			<div id="cir" class="circulo"></div>
-			<div id="London" class="tabcontent">
-				<h3>Corporativo</h3>
-				<div class="row">
-					<div id="productos1" class="column kl">
-						<img id="" src="img/corporativo.jpg" alt="">
-						<img id="" src="img/corporativo3.jpg" alt="">
-						
-					</div>
-					<div class="column kl">
-						<img src="img/corporativo1.jpg" alt="">
-						<img id="" src="img/corporativo4.jpeg" alt="">
-					</div>
-					<div class="column kl">
-						<img src="img/corporativo2.jpg" alt="">
-					</div>	
-				</div>
-			</div>
-			  
-			<div id="Paris" class="tabcontent">
-				<h2>Oficina</h2>
+			<div id="Paris" class="tabcontent kol">
 				<div class="oficina">
-					<h3>Sillas</h3>
 					<div class="row">
 						<div id="productos2" class="column mop">
 							<img id="myImg2" src="img/AstonA (1).png" alt="">
@@ -81,58 +59,14 @@
 						</div>
 					</div>
 				</div>
-				<div class="oficina">
-					<h3>Escritorios</h3>
-					<div class="row">
-						<div id="productos2" class="column mop">
-							<img id=""src="img/puestosoperativos2.png" alt="escritorios enfrentados">
-							<img id=""src="img/puestosoperativos4.png" alt="escritorio simple">
-						</div>
-						<div class="column">	
-							
-						</div>
-						<div class="column">	
-							
-						</div>
-					</div>
-				</div>
 			</div>
-			  
-			<div id="Tokyo" class="tabcontent">
-				<h3>Residencial</h3>
-				<div class="row">	
-					<div id="productos3" class="column kl" >
-						<img id=""src="img/hogar2.png" alt="">
-					</div>
-					<div class="column kl">
-						<img id=""src="img/hogar3.png" alt="">
-					</div>
-					<div class="column kl">
-						<img id=""src="img/cocina 2.jpg" alt="">
-					</div>
-				</div>
-			</div>
-			
-			<!--div id="myModal" class="modal"-->
-
-				<!-- The Close Button >
-				<span class="close">&times;</span-->
-			  
-				<!-- Modal Content (The Image)>
-				<img class="modal-content" id="img01"-->
-			  
-				<!-- Modal Caption (Image Text)>
-				<div id="caption"></div>
-			</div-->
 			<div id="cir2" class="circulo"></div>
-		
 		</main>
-		
 		<script src="js/totop.js"></script>
 		<script>
-			// Get the element with id="defaultOpen" and click on it
 			document.getElementById("defaultOpen").click();
 			</script>
+			<script src="js/menu.js"></script>
 	</body>
 </html>
      

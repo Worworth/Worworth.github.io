@@ -1,13 +1,13 @@
 
-*{font-family: Arial, Helvetica, sans-serif;}
+*{font-family: Arial}
 
 header{
     width: 100%;
     height: 30px;
 }
 .header{
-    width: 35%;
-    height: auto;
+    width: 40%;
+    height: 100%;
     float: right;
 }
 .header img{
@@ -15,11 +15,14 @@ header{
     height: 100%;
 }
 footer{
-    width: 100%;
+    width: calc(100% - 20px);
     height: auto;
     background-color: black;
     opacity: 0.8;
     color: #ffffff;
+    padding: 20px 0 20px 20px;
+    margin-top: 20px;
+    
 }
 main{
     width: 100%;
@@ -28,34 +31,36 @@ main{
 h2{
     color:white;
 }
-h3{
+/*h3{
     font-size: 20px;
     text-align: center;
-}
-nav{
+}*/
+.topnav{
     width: 100%;
     height: auto;
     background-color: #F5874F;
+    overflow: hidden;
     clear: left;
-    padding: 10px 0;
-    
 }
-nav a{
-    width: auto;
+.topnav a{
+    display: block;
     color:white;
     text-decoration: none;
-    text-align: center;
-    padding: 15px;
-    font-size: 20px;
+    text-align: center; 
+    font-size: 17px;;
+    padding: 15px 16px;
     font-weight: 200;
+    float: left;
+    
 }
-nav a:hover{
+.topnav a:hover{
     background-color: #b9935a4d;
     opacity: 0.5;
     text-decoration: none;
-
 }
-
+.topnav .icon {
+  display: none;
+}
 /*Entrada*/
 .slideshow-container {
     width: 100%;
@@ -130,17 +135,15 @@ nav a:hover{
     margin: 0 auto;
 }
 .nosotros div{
-
-    height: auto;
     width: 100%;
+    height: auto;
     color: white;
-    font-size: 20px;
 }
 .nosotros div p{
-    padding: 20px;
+    padding: 25px 25px 20px 25px;
 }
 .nosotros img{
-    margin: 5% 7.5%;
+    margin: 2.5% 7.5%;
     width: 85%;
     border: 3px solid  #ffff;
 }
@@ -163,7 +166,6 @@ nav a:hover{
 }
 .listaempre{
     width: 85%;
-    font-size: 20px;
     text-align:center;
     color:white;
     background-color:#848688;
@@ -180,6 +182,7 @@ nav a:hover{
     margin: 0 2.5%;
     color: white;
     padding: 1.5%;
+    line-height: 30px;
 }
 
 /*Productos*/
@@ -205,6 +208,9 @@ nav a:hover{
     border-top: none;
     background-color: #848688;
 }
+.kol{
+    display: block;
+}
 .tablinks{
     background-color: #4b4a4a;
     border: none;
@@ -222,7 +228,6 @@ nav a:hover{
     flex: 30%;
     height: auto;
     padding: 0 4px;
-    margin: 0 auto;
 }
 .kl img{
     width: 100%;
@@ -233,7 +238,7 @@ nav a:hover{
 .mop img{
     width: 250px;
     height: 300px;
-    margin: 0 auto;
+    margin: 4px  5%;
     border: 2px solid #ffffff;
 }
 #myBtn{
@@ -251,7 +256,7 @@ nav a:hover{
     border-radius: 10px; 
     font-size: 12px; 
 }
-#myBtn2{
+#myBtn2, #myBtn3 {
     display: block; 
     position: fixed; 
     bottom: 115px;
@@ -266,7 +271,7 @@ nav a:hover{
     border-radius: 10px; 
     font-size: 12px; 
 }
-#myBtn3{
+/*#myBtn3{
     display: block; 
     position: fixed;
     bottom: 10px;
@@ -280,13 +285,14 @@ nav a:hover{
     padding: 10px; 
     border-radius: 10px; 
     font-size: 12px;
-}
+}*/
 #myBtn{
     padding: 15px; 
 }
 #myBtn img, #myBtn2 img, #myBtn3 img{
     width: 30px;
-    height: auto
+    height: auto;
+    color:#000000;
 }
 #myBtn span, #myBtn2 span, #myBtn3 span{
     display: none;
@@ -303,15 +309,31 @@ nav a:hover{
     background-color: #be6d44;
 }
 @media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
     .column {
-      flex: 100%;
-      max-width: 100%;
+      flex: 50%;
+      max-width: 50%;
     }
 }
 @media screen and (max-width: 800px) {
     .column {
-      flex: 50%;
-      max-width: 50%;
+      flex: 95%;
+      max-width: 95%;
     }
 }
 
@@ -365,12 +387,15 @@ nav a:hover{
 
 }
 .pop{
-    width: 100%;
-    padding-left: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+.pop p{
+    padding-top: 10px;
 }
 #divform{
-    width:100%;
- 
+    width:90%;
+    margin: 10px auto;
 }
 input{
     color: black;
@@ -428,20 +453,18 @@ input[type=submit]:hover {
 
 @media screen and (min-width:47em){
 
-    nav a{
-        font-size: 25px;
-    }
     header{
         height: 55px;
     }
 
-    /*inicio*/
+    /*Inicio*/
     .nosotros div{
         font-size: 23px;
     }
     .listaempresas {
         font-size:20px ;
     }
+    /*Trabajos y accesorios*/
 
     /*Contacto*/
 
@@ -484,14 +507,6 @@ input[type=submit]:hover {
     .nosotros-variado img{
         width: 42.5%;
     }
-    .listaempre{
-        width: 65%;
-        font-size: 30px;
-    }
-    .listaempresas{
-      font-size: 15px;
-    }
-
     /*Productos*/
     .circulo{
         width: 400px;
