@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="es">
 	<head>
-  	<meta charset="utf-8">
+  		<meta charset="utf-8">
 		<title>MobleArt-Productos</title>
 		<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="bootstrap/css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
-		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	</head>
-  	<body >
+  	<body>
 		<header>
 			<div class="header"><img id="logomobel" src="img/LOGO MOBELART.jpg"></div>
 		</header>
@@ -35,16 +34,16 @@
 			<div id="London" class="tabcontent">
 				<div class="row">
 					<div id="productos1" class="column kl">
-						<img id="" src="img/corporativo.jpg" alt="">
-						<img id="" src="img/corporativo3.jpg" alt="">
+						<img id="" src="img/corporativo.jpg" alt="" onclick="onClick(this)">
+						<img id="" src="img/corporativo3.jpg" alt="" onclick="onClick(this)">
 						
 					</div>
 					<div class="column kl">
-						<img src="img/corporativo1.jpg" alt="">
-						<img id="" src="img/corporativo4.jpeg" alt="">
+						<img src="img/corporativo1.jpg" alt="" onclick="onClick(this)">
+						<img id="" src="img/corporativo4.jpeg" alt="" onclick="onClick(this)">
 					</div>
 					<div class="column kl">
-						<img src="img/corporativo2.jpg" alt="">
+						<img src="img/corporativo2.jpg" alt="" onclick="onClick(this)">
 					</div>	
 				</div>
 			</div>
@@ -61,12 +60,21 @@
 					</div>
 				</div>
 			</div>
+			<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
+				<img class="w3-modal-content" id="img01" style="width:50%">
+			  </div>
 			<div id="cir2" class="circulo"></div>
 		<script src="js/totop.js"></script>
 		<script>
 			document.getElementById("defaultOpen").click();
 		</script>
 		<script src="js/menu.js"></script>
+		<script>
+			function onClick(element) {
+			  document.getElementById("img01").src = element.src;
+			  document.getElementById("modal01").style.display = "block";
+			}
+			</script>
 	</body>
 </html>
      
