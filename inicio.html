@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
+  	<head>
     	<meta charset="utf-8">
-		<title> MobelArt | Inicio</title>
+		<title>MobelArt | Inicio</title>
+		<link rel="icon" type="image/x-icon" href="img/iconmobel.ico">
 		<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="bootstrap/css/bootstrap.css" />
         <link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
@@ -28,17 +29,57 @@
 			<div class="nosotros">
 				<div>
 					<p>
-						Somos empresa con más de 30 años de experiencia en diseño, fabricación y comercialización de equipamientos para empresas. Un equipo de profesionales con vasta experiencia en el rubro, respaldados por una planta de 3000 M2 con maquinaria de última tecnologia, que permite abastecer a empresas e instituciones de primer nivel.
+						Somos una empresa con más de 30 años de experiencia en diseño, fabricación y comercialización de equipamientos para empresas. Un equipo de profesionales con vasta experiencia en el rubro, respaldados por una planta de 3000 M2 con maquinaria de última tecnología, que permite abastecer a empresas e instituciones de primer nivel.
 					</p>
 				</div>
 				<img src="img/unknown1.png" alt="Fachada Empresa">
 			</div>
 			<div class="nosotros-variado">
-				<img id="1" src="img/unknown2.png" alt="Hombres trabajando">
-				<img id="5" src="img/modelo3d2.png" alt="Modelo 3D 2">	
-				<img id="3" src="img/unknown4.png" alt="Materiales">
-				<img id="4" src="img/modelo3d.png" alt="Modelo 3D">
-				<img id="2" src="img/unknown3.png" alt="Hombre con maquina">
+				<div class="mySlides2">
+				  <div class="numbertext">1 / 6</div>
+					<img id="1" src="img/unknown2.png" alt="Hombres trabajando" >
+				</div>
+			  
+				<div class="mySlides2">
+				  <div class="numbertext">2 / 6</div>
+					<img  id="5" src="img/modelo3d2.png" alt="Modelo 3D 2" >
+				</div>
+			  
+				<div class="mySlides2">
+				  <div class="numbertext">3 / 6</div>
+					<img id="3" src="img/unknown4.png" alt="Materiales" >
+				</div>
+			  
+				<div class="mySlides2">
+				  <div class="numbertext">4 / 6</div>
+					<img  id="4" src="img/modelo3d.png" alt="Modelo 3D" >
+				</div>
+			  
+				<div class="mySlides2">
+				  <div class="numbertext">5 / 6</div>
+					<img id="2" src="img/unknown3.png" alt="Hombre con maquina">
+				</div>
+				<div class="caption-container">
+				  <p id="caption"></p>
+				</div>
+
+				<div class="row2">
+					<div class="column2">
+					<img class="demo cursor" src="img/unknown2.png" style="width:100%" onclick="currentSlide(1)" alt="Hombres trabajando ">
+					</div>
+					<div class="column2">
+					<img class="demo cursor" src="img/modelo3d2.png" style="width:100%" onclick="currentSlide(2)" alt="Modelo 3D 2">
+					</div>
+					<div class="column2">
+					<img class="demo cursor" src="img/unknown4.png"  style="width:100%" onclick="currentSlide(3)" alt="Materiales">
+					</div>
+					<div class="column2">
+					<img class="demo cursor" src="img/modelo3d.png"  style="width:100%" onclick="currentSlide(4)" alt="Modelo 3D">
+					</div>
+					<div class="column2">
+					<img class="demo cursor" src="img/unknown3.png" style="width:100%" onclick="currentSlide(5)" alt="Hombre con maquina">
+					</div>
+				</div>
 			</div>
 			<h2 class="listaempre">EMPRESAS QUE CONFIAN EN NOSOTROS</h2>
 			<div class="listaempresas">
@@ -88,6 +129,7 @@
 		</main>
 		<footer><p>Copyright © 2022 Mobel Art. Todos los derechos reservados.</p></footer>
 		<script src="js/menu.js"></script>
+		<script src="js/sliderinicio.js"></script>
 	</body>
 </html>
     

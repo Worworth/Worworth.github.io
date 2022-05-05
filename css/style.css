@@ -1,12 +1,13 @@
 
 header{
     width: 100%;
-    height: auto;
+    height: 60px;
 }
 .header{
-    width: 25%;
-    height: 100%;
+    width: 30%;
+    height: 55%;
     float: right;
+    margin: 20px 0;
 }
 .header img{
     width: 100%;
@@ -29,10 +30,10 @@ main{
 h2{
     color:white;
 }
-/*h3{
+h3{
     font-size: 20px;
     text-align: center;
-}*/
+}
 .topnav{
     width: 100%;
     height: auto;
@@ -46,9 +47,9 @@ h2{
     color:white;
     text-decoration: none;
     text-align: center; 
-    padding: 15px 16px;
+    padding: 10px 16px;
     float: left;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
     
@@ -61,6 +62,7 @@ h2{
 .topnav .icon {
   display: none;
 }
+
 /*Entrada*/
 .slideshow-container {
     width: 100%;
@@ -80,26 +82,29 @@ h2{
 
 }
 .empezar{
-    width: 20%;
-    height: 120px;
+    width: 25%;
     position: absolute;
-    top: 55%;
-    right: 20%;
+    top: 50%;
+    right: 15%;
     z-index: 2;
     text-align: center;
-    padding: 10px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .empezar p{
     width: 100%;
     color: #ffffff;
-    font-size: 25px;
     margin: 15px 0;
+    font-size: 18px;
 }
 .empezar a{
     padding: 10px;
     border: none;
+    text-decoration: none;
     background-color: #F5874F;
     color: #ffffff;
+    font-size: 17px;
+    font-weight: bold;
+    
 }
 .empezar:hover + .slideshow-container::after{
     background-color: #00000080;
@@ -150,11 +155,46 @@ h2{
     width: 85%;
     border: 3px solid  #ffff;
 }
+.mySlides2 {
+    display: none;
+}
+.cursor {
+    cursor: pointer;
+}
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+.caption-container {
+    text-align: center;
+    background-color: #222;
+    padding: 2px 16px;
+    color: white;
+}
+.row2:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.column2 {
+    float: left;
+    width: 19.3%;
+}
+.demo {
+    opacity: 0.6;
+}
+.active,
+.demo:hover {
+    opacity: 1;
+}
 .nosotros-variado{
-    display: flex;
+    /*display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: space-evenly;*/
     background-color: #848688;
     width: 100%;
     height: auto;
@@ -165,17 +205,18 @@ h2{
     border: 2px solid #ffffff;
     -webkit-border-radius: 20px;
     border-radius: 20px;
-    margin:1.5%;
+    margin:1.5% 7.5% 0 7.5%;
 }
 .listaempre{
     width: 85%;
     text-align:center;
     color:white;
     background-color:#848688;
-    padding: 5px;
+    padding: 10px;
     border-bottom-width: 10px;
     -webkit-border-radius: 10px 0px 0 100px;
     border-radius: 0 10px 100px 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .listaempresas{
     background-color: #848688;
@@ -205,16 +246,6 @@ h2{
     position: absolute;
     right: 0;
 }
-.tabcontent {
-    display: none;
-    margin: 20px auto;
-    padding: 10px 12px;
-    border-top: none;
-    background-color: #848688;
-}
-.kol{
-    display: block;
-}
 .tablinks{
     background-color: #4b4a4a;
     border: none;
@@ -222,22 +253,32 @@ h2{
     padding: 5px;
     margin-top: 5px;
 }
+.tabcontent {
+    display: none;
+    margin: 20px auto;
+    /*padding: 10px 12px;*/
+    border-top: none;
+    background-color: #848688;
+    padding: 15px;
+}
+.kol{
+    display: block;
+}
+
 .row{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 0 4px;
 }
 .column{
     flex: 30%;
     height: auto;
-    padding: 0 4px;
+    
 }
 .kl img{
-    width: 100%;
+    width: calc(100% - 30px);
     height: 250px;
-    margin-top: 8px;
     border: 2px solid #ffffff;
+    margin: 15px 15px;
 }
 .mop img{
     width: 250px;
@@ -445,21 +486,32 @@ input[type=submit]:hover {
 
 @media screen and (min-width:47em){
 
-
-    /*Inicio*/
-
-
+    header{
+        height: 90px;
+    }
+    .header{
+        width: 25%;
+        height: 55%;
+    }
     /*Trabajos y accesorios*/
     .kl img{
         height: 450px;
     }
-    /*Contacto*/
-
 }
 
 @media screen and (min-width:60em){
-
-
+    
+    header{
+        height: 90px;
+    }
+    .header{
+        width: 25%;
+        height: 65%;
+    }
+    /*Entrada*/
+    .empezar p{
+        font-size: 22px;
+    }
     /*inicio*/
     .listaempre{
         font-size: 25px;
@@ -481,10 +533,13 @@ input[type=submit]:hover {
 }
 
 @media screen and (min-width:1440px){
-
-    /*Entrada*/
-    .nosotros-variado img{
-        width: 42.5%;
+    
+    header{
+        height: 120px;
+    }
+    .header{
+        width: 25%;
+        height: 75%;
     }
     /*Productos*/
     .circulo{
@@ -494,44 +549,10 @@ input[type=submit]:hover {
     .kl img{
         height: 400px;
     }
-    /*Contacto*/
-    /*.direccion{
-        background-color:#4b4a4a;
-        width: 100%;
-        height: auto;
-        color: white;
-        opacity: inherit;
-        position:relative;
-    }
-    .direccion a{
-        font-size: 20px;
-    }*/
-    /*.container {
-        width:85%;
-        height:600px;
-        border-radius: 5px;
-        padding: 20px;
-        position: relative;
-        margin:20px auto;
-        color: white;
-        background-color: #4b4a4a;
-    }*/
-    /*.container h2{
-        background-color:  #3f529f;
-        padding: 20px;
-        margin:-20px 0 20px -20px;
-        width: 48%;
-        text-align: center;
-    }*/
-    
 }
 
 @media screen and (min-width:2560px){
    
-    header{
-        height: 180px;
-    }
-
 }
 
 

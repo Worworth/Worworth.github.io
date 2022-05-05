@@ -2,10 +2,12 @@
 <html lang="es">
 	<head>
   		<meta charset="utf-8">
-		<title>MobleArt-Productos</title>
+		<title>MobleArt | Productos</title>
+		<link rel="icon" type="image/x-icon" href="img/iconmobel.ico">
 		<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="bootstrap/css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">	
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<meta name="apple-mobile-web-app-capable" content="yes">
@@ -34,35 +36,38 @@
 			<div id="London" class="tabcontent">
 				<div class="row">
 					<div id="productos1" class="column kl">
-						<img id="" src="img/corporativo.jpg" alt="" onclick="onClick(this)">
-						<img id="" src="img/corporativo3.jpg" alt="" onclick="onClick(this)">
+						<img id="" src="img/corporativo.jpg" alt=""  class="w3-third" onclick="onClick(this)">
+						<img id="" src="img/corporativo3.jpg" alt="" class="w3-third" onclick="onClick(this)">
 						
 					</div>
 					<div class="column kl">
-						<img src="img/corporativo1.jpg" alt="" onclick="onClick(this)">
-						<img id="" src="img/corporativo4.jpeg" alt="" onclick="onClick(this)">
+						<img src="img/corporativo1.jpg" alt="" class="w3-third" onclick="onClick(this)">
+						<img id="" src="img/corporativo4.jpeg" alt="" class="w3-third" onclick="onClick(this)">
 					</div>
 					<div class="column kl">
-						<img src="img/corporativo2.jpg" alt="" onclick="onClick(this)">
+						<img src="img/corporativo2.jpg" alt="" class="w3-third" onclick="onClick(this)">
 					</div>	
 				</div>
 			</div>
 			<div id="Tokyo" class="tabcontent">
 				<div class="row">	
 					<div id="productos3" class="column kl" >
-						<img id=""src="img/hogar2.png" alt="">
+						<img id="" src="img/hogar2.png" alt="" class="w3-third" onclick="onClick(this)">
 					</div>
 					<div class="column kl">
-						<img id=""src="img/hogar3.png" alt="">
+						<img id="" src="img/hogar3.png" alt="" class="w3-third" onclick="onClick(this)">
 					</div>
 					<div class="column kl">
-						<img id=""src="img/cocina 2.jpg" alt="">
+						<img id="" src="img/cocina 2.jpg" alt="" class="w3-third" onclick="onClick(this)">
 					</div>
 				</div>
 			</div>
 			<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
-				<img class="w3-modal-content" id="img01" style="width:50%">
-			  </div>
+				<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
+				<div class="w3-modal-content w3-animate-zoom">
+					<img id="img01" style="width:100%;">
+				  </div>
+			</div>
 			<div id="cir2" class="circulo"></div>
 		<script src="js/totop.js"></script>
 		<script>
@@ -74,7 +79,8 @@
 			  document.getElementById("img01").src = element.src;
 			  document.getElementById("modal01").style.display = "block";
 			}
-			</script>
+		</script>
+		
 	</body>
 </html>
      
