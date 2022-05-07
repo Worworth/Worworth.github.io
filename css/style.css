@@ -252,6 +252,7 @@ h3{
     color: #ffffff;
     padding: 5px;
     margin-top: 5px;
+    visibility: hidden;
 }
 .tabcontent {
     display: none;
@@ -264,7 +265,6 @@ h3{
 .kol{
     display: block;
 }
-
 .row{
     display: flex;
     flex-wrap: wrap;
@@ -281,10 +281,28 @@ h3{
     margin: 15px 15px;
 }
 .mop img{
+    display: block;
     width: 250px;
     height: 300px;
-    margin: 4px  5%;
+    margin: 4px  auto;
     border: 2px solid #ffffff;
+    background-color: #464646;
+}
+.nombre{
+    display: none;
+    width: 254px;
+    height: 30px;
+    background-color: #ffffff;
+    text-align: center;
+    margin: 10px  auto;
+    margin-top: -7px;
+}
+.nombre p{
+    padding: 5px;
+    font-weight: bold;
+}
+.mop img:hover + .nombre{
+    display: block;
 }
 #myBtn{
     display: block; 

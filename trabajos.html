@@ -3,7 +3,7 @@
 	<head>
   		<meta charset="utf-8">
 		<title>MobleArt | Productos</title>
-		<link rel="icon" type="image/x-icon" href="img/iconmobel.ico">
+		<link rel="icon" type="image/x-icon" href="img/iconmobel.jpeg">
 		<link rel="stylesheet" type="text/css" media="all" href="css/reset.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="bootstrap/css/bootstrap.css" />
 		<link rel="stylesheet" type="text/css" media="all" href="css/style.css" />
@@ -17,8 +17,8 @@
 		<header>
 			<div class="header"><img id="logomobel" src="img/LOGO MOBELART.jpg"></div>
 		</header>
-		<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="img/meeting.png" alt="corporativo"/><span>Corporativo</span></button>
-        <button onclick="topFunction3()" id="myBtn3" title="Go to top3"><img src="img/home.png" alt="residencial"/><span>Residencial</span></button>
+		<button onclick="topFunction(); openCity(event, 'London');" id="myBtn" title="Go to top"><img src="img/meeting.png" alt="corporativo"/><span>Corporativo <i class='fas fa-arrow-up' style='font-size:24px'></i></span></button>
+        <button onclick="topFunction3(); openCity(event, 'Tokyo');" id="myBtn3" title="Go to top3"><img src="img/home.png" alt="residencial"/><span>Residencial <i class='fas fa-arrow-up' style='font-size:24px'></i></span></button>
 		<nav class="topnav" id="myTopnav">
 			<a href="inicio.html">Inicio</a>
 			<a href="trabajos.html">Trabajos</a>
@@ -30,7 +30,7 @@
 		</nav>
 			<div class="tab">
 				<button class="tablinks" onclick="openCity(event, 'London')"  id="defaultOpen">Coorporativo</button>
-				<button class="tablinks" onclick="openCity(event, 'Tokyo')">Residencial</button>
+				<!--button class="tablinks" onclick="openCity(event, 'Tokyo')">Residencial</button-->
 			</div>
 			<div id="cir" class="circulo"></div>
 			<div id="London" class="tabcontent">
@@ -41,11 +41,11 @@
 						
 					</div>
 					<div class="column kl">
-						<img src="img/corporativo1.jpg" alt="" class="w3-third" onclick="onClick(this)">
+						<img id="" src="img/corporativo1.jpg" alt="" class="w3-third" onclick="onClick(this)">
 						<img id="" src="img/corporativo4.jpeg" alt="" class="w3-third" onclick="onClick(this)">
 					</div>
 					<div class="column kl">
-						<img src="img/corporativo2.jpg" alt="" class="w3-third" onclick="onClick(this)">
+						<img id="" src="img/corporativo2.jpg" alt="" class="w3-third" onclick="onClick(this)">
 					</div>	
 				</div>
 			</div>
@@ -80,7 +80,7 @@
 			  document.getElementById("modal01").style.display = "block";
 			}
 		</script>
-		
+		<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 	</body>
 </html>
      

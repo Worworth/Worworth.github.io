@@ -17,7 +17,7 @@
 			<div class="header"><img id="logomobel" src="img/LOGO MOBELART.jpg"></div>
 		</header>
 		
-        <button onclick="topFunction2()" id="myBtn2" title="Go to top2"><img src="img/office-table.png" alt="oficina"/><span>Arriba</span></button>
+        <button onclick="topFunction2()" id="myBtn2" title="Go to top2"><img src="img/office-table.png" alt="oficina"/><span><i class='fas fa-arrow-up' style='font-size:24px'></i></span></button>
 		<nav class="topnav" id="myTopnav">
 			<a href="inicio.html">Inicio</a>
 			<a href="trabajos.html">Trabajos</a>
@@ -33,13 +33,20 @@
 				<div class="oficina">
 					<div class="row">
 						<div id="productos2" class="column mop">
-							<img id="myImg2" src="img/AstonA (1).png" alt="">
+							<img id="myImg2" class="pop" src="img/AstonA (1).png" alt="Silla uno">
+							<div class="nombre"><p>Silla uno</p></div>
 							<img id="myImg3"src="img/AstonM (1.5.5).png" alt="">
+							<div class="nombre"><p>Silla uno</p></div>
 							<img src="img/IndiaApa (1).png" alt="">
+							<div class="nombre"><p>Silla uno</p></div>
 							<img src="img/Cat20 (1).jpg" alt="">
+							<div class="nombre"><p>Silla uno</p></div>
 							<img src="img/Cat20 (4).jpg" alt="">
+							<div class="nombre"><p>Silla uno</p></div>
 							<img src="img/CosmosCPA (1).png" alt="">
+							<div class="nombre"><p>Silla uno</p></div>
 							<img src="img/Mariner (1).jpg" alt="">
+							<div class="nombre"><p>Silla uno</p></div>
 						</div>
 						<div class="column mop">
 							<img id="myImg4"src="img/AstonA (2.5).png" alt="">
@@ -58,6 +65,9 @@
 							<img src="img/Cat20 (3).jpg" alt="">
 						</div>
 					</div>
+					<div id="descripcionfoto">
+						<span alt="pop"></span>
+					</div>
 				</div>
 			</div>
 			<div id="cir2" class="circulo"></div>
@@ -66,7 +76,14 @@
 		<script>
 			document.getElementById("defaultOpen").click();
 		</script>
+			<script>
+				function onClick(element){
+					document.getElementsByClassName("pop").alt= element.alt;
+					document.getElementById("descripcionfoto").style.display="block";
+				}
+			</script>
 		<script src="js/menu.js"></script>
+		<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 	</body>
 </html>
      
