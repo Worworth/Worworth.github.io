@@ -169,10 +169,11 @@ h3{
     top: 0;
 }
 .caption-container {
+    content: "";
+    height: 10px;
     text-align: center;
     background-color: #222;
     padding: 2px 16px;
-    color: white;
 }
 .row2:after {
     content: "";
@@ -191,10 +192,6 @@ h3{
     opacity: 1;
 }
 .nosotros-variado{
-    /*display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;*/
     background-color: #848688;
     width: 100%;
     height: auto;
@@ -240,7 +237,7 @@ h3{
 }
 #cir{
     position: absolute;
-    left:0%;
+    left:0;
 }
 #cir2{
     position: absolute;
@@ -256,8 +253,7 @@ h3{
 }
 .tabcontent {
     display: none;
-    margin: 20px auto;
-    /*padding: 10px 12px;*/
+    margin: 10px auto;
     border-top: none;
     background-color: #848688;
     padding: 15px;
@@ -288,7 +284,7 @@ h3{
     border: 2px solid #ffffff;
     background-color: #464646;
 }
-.nombre{
+/*.nombre{
     display: none;
     width: 254px;
     height: 30px;
@@ -303,8 +299,8 @@ h3{
 }
 .mop img:hover + .nombre{
     display: block;
-}
-#myBtn{
+}*/
+#myBtn, #myBtn2{
     display: block; 
     position: fixed; 
     bottom: 225px; 
@@ -315,14 +311,14 @@ h3{
     background-color: #F5874F;
     color: black; 
     cursor: pointer; 
-    padding: 10px; 
+    padding: 15px; 
     border-radius: 10px; 
     font-size: 12px; 
 }
-#myBtn2, #myBtn3 {
+#myBtn3 {
     display: block; 
     position: fixed; 
-    bottom: 115px;
+    bottom: 155px;
     right: 10px;
     z-index: 1; 
     border: none; 
@@ -330,27 +326,9 @@ h3{
     background-color: #F5874F;
     color: black; 
     cursor: pointer; 
-    padding: 10px; 
+    padding: 14px; 
     border-radius: 10px; 
     font-size: 12px; 
-}
-/*#myBtn3{
-    display: block; 
-    position: fixed;
-    bottom: 10px;
-    right: 10px; 
-    z-index: 1; 
-    border: none; 
-    outline: none;
-    background-color: #F5874F;
-    color: black; 
-    cursor: pointer; 
-    padding: 10px; 
-    border-radius: 10px; 
-    font-size: 12px;
-}*/
-#myBtn{
-    padding: 15px; 
 }
 #myBtn img, #myBtn2 img, #myBtn3 img{
     width: 30px;
@@ -498,9 +476,10 @@ input[type=submit]:hover {
 }
 .mapita{
     width: 90%;
-    height: 90%;
+    height: 75%;
     padding: 0 5%;
 }
+
 
 @media screen and (min-width:47em){
 
