@@ -13,23 +13,44 @@
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black">
 	</head>
-  	<body>
+  	<body class="scroll">
 		<header>
 			<div class="header"><img id="logomobel" src="img/LOGO MOBELART.jpg"></div>
 		</header>
-		<button onclick="topFunction(); openCity(event, 'London');" id="myBtn" title="Go to top"><img src="img/meeting.png" alt="corporativo"/><span>Corporativo <!--i class='fas fa-arrow-up' style='font-size:24px'></i--></span></button>
-        <button onclick="topFunction3(); openCity(event, 'Tokyo');" id="myBtn3" title="Go to top3"><img src="img/home.png" alt="residencial"/><span>Residencial <!--i class='fas fa-arrow-up' style='font-size:24px'></i--></span></button>
+		<button  id="myBtn" title="Go to top"><img src="img/meeting.png" alt="corporativo"/><span>Corporativo </span></button>
+        <button id="myBtn3" title="Go to top3"><img src="img/home.png" alt="residencial"/><span>Residencial </span></button>
 		<nav class="topnav" id="myTopnav">
 			<a href="inicio.html">Inicio</a>
 			<a href="trabajos.html">Trabajos</a>
-			<a href="accesorios.html">Accesorios</a>
+			<!--a href="accesorios.html">Accesorios</a-->
 			<a href="contacto.html">Contactos</a>
 			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
 				<i class="fa fa-bars"></i>
 			  </a>
 		</nav>
-			<div id="cir" class="circulo"></div>
-			<div id="London" class="tabcontent">
+			<div class="miniature">
+				<ul class="gallery">
+					<li><button id="defaultOpen" onclick="topFunction(); openCity(event, 'Paco');" class="all">ALL</button></li>
+					<li><button onclick="topFunction(); openCity(event, 'London');" class="techintvm"></button></li>
+					<li><button onclick="topFunction(); openCity(event, 'Tokyo');" class="boca"></button></li>
+					<li><button onclick="topFunction(); openCity(event, 'Jopo');" class="cesar"></button></li>
+					<li><button onclick="topFunction(); openCity(event, 'Poco');" class="directorio"></button></li>
+					<li><button onclick="topFunction(); openCity(event, 'Madrid');" class="siderca"></button></li>
+					<!--li><button onclick="topFunction(); openCity(event, 'Anna');" class=""></button></li>
+					<li><button onclick="topFunction(); openCity(event, 'Torres');" class=""></button></li>
+					<li><button onclick="topFunction(); openCity(event, 'Dave');" class=""></button></li>
+					<li><button onclick="topFunction(); openCity(event, 'Arturo');" class=""></button></li>
+					<li><button onclick="topFunction(); openCity(event, 'Yuki');" class=""></button></li-->
+				</ul>
+			</div>
+			<div class="caption">
+				<p id="caption" class="vacam">Techint Vaca Muerta</p>
+				<p  class="bocacap">Boca</p>
+				<p  class="cesarcap">Cesar</p>
+				<p  class="direc">Directorio</p>
+				<p  class="sidercacp">Siderca Carlos Pellegrini</p>
+			</div>
+			<div id="Paco" class="tabcontent tabcontent2">
 				<div class="row">
 					<div id="productos1" class="column kl">
 						<img id="" src="img/corporativo.jpg" alt=""  class="w3-third" onclick="onClick(this)">
@@ -48,8 +69,6 @@
 						<img id="" src="img/technit cordoba (3).jpg" alt="" class="w3-third"  onclick="onClick(this)">
 						<img id="" src="img/technit cordoba (4).jpg" alt="" class="w3-third"  onclick="onClick(this)">
 						<img id="" src="img/technit cordoba (14).jpg" alt="" class="w3-third"  onclick="onClick(this)">
-					</div>
-					<div class="column kl">
 						<img id="" src="img/corporativo1.jpg" alt="" class="w3-third" onclick="onClick(this)">
 						<img id="" src="img/corporativo4.jpeg" alt="" class="w3-third" onclick="onClick(this)">
 						<img id="" src="img/15.2.jpg" alt="" class="w3-third"  onclick="onClick(this)">
@@ -66,8 +85,6 @@
 						<img id="" src="img/technit cordoba (7).jpg" alt="" class="w3-third"  onclick="onClick(this)">
 						<img id="" src="img/technit cordoba (8).jpg" alt="" class="w3-third"  onclick="onClick(this)">
 						<img id="" src="img/corporativo2.jpg" alt="" class="w3-third" onclick="onClick(this)">
-					</div>
-					<div class="column kl">
 						<img id="" src="img/alberdi (2).jpg" alt="" class="w3-third"  onclick="onClick(this)">
 						<img id="" src="img/15.0.jpg" alt="" class="w3-third"  onclick="onClick(this)">
 						<img id="" src="img/15.3.jpg" alt="" class="w3-third"  onclick="onClick(this)">
@@ -84,12 +101,6 @@
 						<img id="" src="img/technit cordoba (12).jpg" alt="" class="w3-third"  onclick="onClick(this)">
 						<img id="" src="img/technit cordoba (13).jpg" alt="" class="w3-third"  onclick="onClick(this)">
 						<img id="" src="img/corporativo3.jpg" alt="" class="w3-third" onclick="onClick(this)">
-					</div>	
-				</div>
-			</div>
-			<div id="Tokyo" class="tabcontent">
-				<div class="row">	
-					<div id="productos3" class="column kl" >
 						<img id="" src="img/hogar2.png" alt="" class="w3-third" onclick="onClick(this)">
 						<img id="" src="img/directorio (1).jpg" alt="" class="w3-third" onclick="onClick(this)">
 						<img id="" src="img/directorio (2).jpg" alt="" class="w3-third" onclick="onClick(this)">
@@ -105,8 +116,6 @@
 						<img id="" src="img/libertador (7).jpg" alt="" class="w3-third" onclick="onClick(this)">
 						<img id="" src="img/libertador (10).jpg" alt="" class="w3-third" onclick="onClick(this)">
 						<img id="" src="img/libertador (13).jpg" alt="" class="w3-third" onclick="onClick(this)">
-					</div>
-					<div class="column kl">
 						<img id="" src="img/hogar3.png" alt="" class="w3-third" onclick="onClick(this)">
 						<img id="" src="img/directorio (6).jpg" alt="" class="w3-third" onclick="onClick(this)">
 						<img id="" src="img/directorio (7).jpg" alt="" class="w3-third" onclick="onClick(this)">
@@ -122,8 +131,6 @@
 						<img id="" src="img/libertador (8).jpg" alt="" class="w3-third" onclick="onClick(this)">
 						<img id="" src="img/libertador (11).jpg" alt="" class="w3-third" onclick="onClick(this)">
 						<img id="" src="img/libertador (14).jpg" alt="" class="w3-third" onclick="onClick(this)">
-					</div>
-					<div class="column kl">
 						<img id="" src="img/cocina 2.jpg" alt="" class="w3-third" onclick="onClick(this)">
 						<img id="" src="img/directorio (11).jpg" alt="" class="w3-third" onclick="onClick(this)">
 						<img id="" src="img/directorio (12).jpg" alt="" class="w3-third" onclick="onClick(this)">
@@ -141,14 +148,83 @@
 					</div>
 				</div>
 			</div>
+			<div id="London" class="tabcontent2">
+				<h3>Techint Vaca Muerta</h3>
+				<div class="content2">
+					<img src="img/techin-0.jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/techin-1.jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/techin-4.jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/techin-5.jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/techin-11.jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/techin-27.jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/techin-32.jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/techin-36.jpg" alt="" class="w3-third" onclick="onClick(this)">
+				</div>
+			</div>
+			<div id="Tokyo" class="tabcontent2">
+				<h3>Boca</h3>
+				<div class="content2">
+					<img src="img/15.0.jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/15.2.jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/15.3.jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/15.5.jpg" alt="" class="w3-third" onclick="onClick(this)">
+				</div>
+			</div>
+			<div id="Jopo" class="tabcontent2">
+				<h3>Cesar</h3>
+				<div class="content2">
+					<img src="img/cesar (1).jpeg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/cesar (2).jpeg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/cesar (3).jpeg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/cesar (4).jpeg" alt="" class="w3-third" onclick="onClick(this)">
+				</div>
+			</div>
+			<div id="Poco" class="tabcontent2">
+				<h3>Directorio</h3>
+				<div class="content2">
+					<img src="img/directorio (1).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/directorio (2).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/directorio (3).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/directorio (4).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/directorio (5).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/directorio (6).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/directorio (7).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/directorio (8).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/directorio (9).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/directorio (10).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/directorio (11).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/directorio (12).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/directorio (13).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/directorio (14).jpg" alt="" class="w3-third" onclick="onClick(this)">
+				</div>
+			</div>
+			<div id="Madrid" class="tabcontent2">
+				<h3>Siderca Carlos Pellegrini</h3>
+				<div class="content2">
+					<img src="img/siderca carlos pellegrini (1).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/siderca carlos pellegrini (2).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/siderca carlos pellegrini (3).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/siderca carlos pellegrini (4).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/siderca carlos pellegrini (5).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/siderca carlos pellegrini (6).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/siderca carlos pellegrini (7).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/siderca carlos pellegrini (8).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/siderca carlos pellegrini (9).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/siderca carlos pellegrini (10).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/siderca carlos pellegrini (11).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/siderca carlos pellegrini (12).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/siderca carlos pellegrini (13).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/siderca carlos pellegrini (14).jpg" alt="" class="w3-third" onclick="onClick(this)">
+					<img src="img/siderca carlos pellegrini (15).jpg" alt="" class="w3-third" onclick="onClick(this)">
+				</div>
+			</div>
 			<div id="modal01" class="w3-modal" onclick="this.style.display='none'">
 				<span class="w3-button w3-hover-red w3-xlarge w3-display-topright">&times;</span>
 				<div class="w3-modal-content w3-animate-zoom">
 					<img id="img01" style="width:100%;">
 				  </div>
 			</div>
-			<div id="cir2" class="circulo"></div>
-		<script src="js/totop.js"></script>
+		<script src="js/totop2.js"></script>
 		<script>
 			document.getElementById("myBtn").click();
 		</script>
@@ -159,7 +235,11 @@
 			  document.getElementById("modal01").style.display = "block";
 			}
 		</script>
+		<script>document.getElementById("defaultOpen").click();</script>
+		
 		<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+		<script src="js/slidertrabajos.js"></script>
+		<script src="js/nombrestrabajos.js"></script>
 	</body>
 </html>
      
