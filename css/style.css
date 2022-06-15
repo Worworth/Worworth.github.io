@@ -31,7 +31,8 @@ h2{
     color:white;
 }
 h3{
-    font-size: 20px;
+    color: #ffffff;
+    font-size: 35px;
     text-align: center;
 }
 .topnav{
@@ -40,24 +41,25 @@ h3{
     background-color: #F5874F;
     overflow: hidden;
     clear: left;
-    
 }
 .topnav a{
     display: block;
-    color:white;
+    color:#ffffff;
     text-decoration: none;
     text-align: center; 
     padding: 10px 16px;
     float: left;
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     font-family: Arial, Helvetica, sans-serif;
-    
 }
 .topnav a:hover{
     background-color: #b9935a4d;
     opacity: 0.5;
     text-decoration: none;
+}
+.topnav a.active{
+    background-color: #ff691e;
 }
 .topnav .icon {
   display: none;
@@ -104,7 +106,6 @@ h3{
     color: #ffffff;
     font-size: 17px;
     font-weight: bold;
-    
 }
 .empezar:hover + .slideshow-container::after{
     background-color: #00000080;
@@ -182,7 +183,11 @@ h3{
 }
 .column2 {
     float: left;
-    width: 19.3%;
+    width: calc(30% - 5px);
+    margin: 5px;
+}
+.column2 img{
+    height: 100px;
 }
 .demo {
     opacity: 0.6;
@@ -226,22 +231,79 @@ h3{
     font-family: Arial, Helvetica, sans-serif;
 }
 
-/*Productos*/
+/*Trabajos*/
+.zoom {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.zoom:hover {
+    opacity: 0.7;
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+ #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+.modal-content, #caption {
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
 
+ @keyframes zoom {
+    from {transform:scale(0)}
+    to {transform:scale(1)}
+}
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+.close:hover,
+.close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+@media only screen and (max-width: 700px){
+    .modal-content {
+      width: 100%;
+    }
+}
 .miniature{
     height: 100%;
     background-color: #848688;
-    
+    margin-top: 20px;
+    font-size: 17px;
 }
-.caption{
-    width: 100%;
-}
-.caption p{
-    display: none;
-    text-align: center;
-    font-size: 20px;
-}
-
 .gallery {
 	padding: 1rem;
 	display: grid;
@@ -256,40 +318,36 @@ h3{
     scrollbar-color: rgba(0, 0, 0, .5) rgba(0, 0, 0, 0);
     scrollbar-width: thin;
 }
+button{
+    font-size: 17px;
+}
 .gallery::-webkit-scrollbar {
     -webkit-appearance: none;
 }
-
 .gallery::-webkit-scrollbar:vertical {
     width:10px;
 }
-
 .gallery::-webkit-scrollbar-button:increment,.contenedor::-webkit-scrollbar-button {
     display: none;
 } 
-
 .gallery::-webkit-scrollbar:horizontal {
     height: 10px;
 }
-
 .gallery::-webkit-scrollbar-thumb {
     background-color: #F5874F;
     border-radius: 20px;
     border: 3px solid #848688;
 }
-
 .gallery::-webkit-scrollbar-track {
     border-radius: 10px;  
 }
 .active {
 	scroll-snap-type: unset;
 }
-
 li {
 	scroll-snap-align: center;
 	display: inline-block;
 	border-radius: 3px;
-	font-size: 20px;
     width: 100%;
 }
 .gallery button{
@@ -304,18 +362,13 @@ li {
 }
 .all{
     color: #ffffff;
-    font-size: 64px;
     background-color: #474849;
-   
 }
 .all:hover{
      opacity: 0.5;
 }
 .techintvm{
     background: url(../img/techin-0.jpg);
-}
-.techintvm:hover + .vacam{
-    display: block;
 }
 .boca{
     background: url(../img/15.2.jpg);
@@ -329,6 +382,41 @@ li {
 .directorio{
     background: url(../img/directorio\ \(8\).jpg);
 }
+.techintcba{
+    background: url(../img/technit\ cordoba\ \(14\).jpg);
+}
+.leloir{
+    background: url(../img/leloir\ \(5\).jpg);
+}
+.libertador{
+    background: url(../img/libertador\ \(15\).jpg);
+}
+.bolivar{
+    background: url(../img/bolivar\ \(1\).jpg);
+}
+.techintvm,
+.boca, 
+.cesar, 
+.siderca, 
+.directorio, 
+.techintcba, 
+.leloir, 
+.libertador, 
+.bolivar{
+    color: transparent;
+}
+.techintvm:hover, 
+.boca:hover, 
+.cesar:hover, 
+.siderca:hover, 
+.directorio:hover, 
+.techintcba:hover, 
+.leloir:hover, 
+.libertador:hover, 
+.bolivar:hover{
+    color: white;
+    opacity: 0.5;
+}
 .miniature button:hover{
     cursor: pointer;
 }
@@ -336,8 +424,6 @@ li {
     display: block;
     margin: 10px auto;
     border-top: none;
-    background-color: #848688;
-    padding: 15px;
 }
 .row{
     display: flex;
@@ -345,19 +431,20 @@ li {
 }
 .column{
     flex: 30%;
-    height: auto;
-    
+    height: auto;    
 }
 .kl img{
-    width: calc(33% - 30px);
+    width: calc(100% - 30px);
     height: 250px;
     border: 2px solid #ffffff;
-    margin: 15px 15px;
+    margin: 15px 12px;
 }
 .tabcontent2 {
     display: none;
-    width: 100%;
+    width: calc(100% - 30px);
     background-color: #848688;
+    padding: 0 15px;
+    
 }
 .scroll::-webkit-scrollbar{
     -webkit-appearance: none;
@@ -376,13 +463,6 @@ li {
     align-items: center;
     align-content: space-around;
 }
-.content2 img{
-    width: 30%;
-    height: 30%;
-    border: 2px solid #ffffff;
-    margin: 15px 15px;
-}
-
 #myBtn, #myBtn2{
     display: block; 
     position: fixed; 
@@ -432,34 +512,13 @@ li {
 #myBtn:hover, #myBtn2:hover, #myBtn3:hover{
     background-color: #be6d44;
 }
-@media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-    .topnav.responsive {position: relative;}
-    .topnav.responsive a.icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
+
+/*@media screen and (max-width: 800px) {
     .column {
       flex: 50%;
       max-width: 50%;
     }
-}
-@media screen and (max-width: 800px) {
-    .column {
-      flex: 100%;
-      max-width: 100%;
-    }
-}
+}*/
 /*Contacto*/
 
 .container {
@@ -561,8 +620,28 @@ input[type=submit]:hover {
     height: 75%;
     padding: 0 5%;
 }
-
-
+@media screen and (max-width: 600px) {
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+      float: right;
+      display: block;
+    }
+    .topnav.responsive {position: relative;}
+    .topnav.responsive a.icon {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .topnav.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+    /*.column {
+      flex: 100%;
+      max-width: 100%;
+    }*/
+}
 @media screen and (min-width:47em){
 
     header{
@@ -572,9 +651,13 @@ input[type=submit]:hover {
         width: 25%;
         height: 55%;
     }
-    /*Trabajos y accesorios*/
+    /*Trabajos*/
     .kl img{
-        height: 450px;
+        width: calc(50% - 30px);
+        height: 200px;
+    }
+    .li{
+        font-size: 25px;
     }
 }
 
@@ -592,12 +675,24 @@ input[type=submit]:hover {
         font-size: 22px;
     }
     /*inicio*/
+    .column2 {
+        float: left;
+        width: calc(19% - 4px);
+        margin: 4px;
+    }
+    .column2 img{
+        height: 200px;
+    }
     .listaempre{
         font-size: 25px;
     }
-    /*Trabajos y Accesorios*/
+    /*Trabajos*/
     .kl img{
+        width: calc(33% - 30px);
         height: 300px;
+    }
+    button{
+        font-size:25px;
     }
     /*Contacto*/
     .minimenu button{
@@ -620,11 +715,7 @@ input[type=submit]:hover {
         width: 25%;
         height: 75%;
     }
-    /*Productos*/
-    .circulo{
-        width: 400px;
-        height: 400px;
-    }
+    /*Trabajos*/
     .kl img{
         height: 400px;
     }
