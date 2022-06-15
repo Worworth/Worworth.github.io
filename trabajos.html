@@ -16,8 +16,8 @@
 		<header>
 			<div class="header"><img id="logomobel" src="img/LOGO MOBELART.jpg"></div>
 		</header>
-		<button  id="myBtn" title="Go to top"><img src="img/meeting.png" alt="corporativo"/><span>Corporativo </span></button>
-        <button id="myBtn3" title="Go to top3"><img src="img/home.png" alt="residencial"/><span>Residencial </span></button>
+		<button  id="myBtn" onclick="topFunction()"; title="Go to top"><img src="img/meeting.png" alt="corporativo"/><span>Arriba</span></button>
+        <!--button id="myBtn3" title="Go to top3"><img src="img/home.png" alt="residencial"/><span>Residencial </span></button-->
 		<nav class="topnav" id="myTopnav">
 			<a href="inicio.html" class="menu">Inicio</a>
 			<a href="trabajos.html" class="menu">Trabajos</a>
@@ -29,16 +29,19 @@
 		</nav>
 			<div class="miniature">
 				<ul class="gallery">
-					<li><button id="defaultOpen" onclick="topFunction(); openCity(event, 'Paco');" class="all">Todos los trabajos</button></li>
-					<li><button onclick="topFunction(); openCity(event, 'London');" class="techintvm">Techint Vaca Muerta</button></li>
-					<li><button onclick="topFunction(); openCity(event, 'Tokyo');" class="boca">Oficinas BOCA</button></li>
-					<li><button onclick="topFunction(); openCity(event, 'Jopo');" class="cesar">Cesar</button></li>
-					<li><button onclick="topFunction(); openCity(event, 'Poco');" class="directorio">Directorio </button></li>
-					<li><button onclick="topFunction(); openCity(event, 'Madrid');" class="siderca">Siderca Carlos Pellegrini</button></li>
-					<li><button onclick="topFunction(); openCity(event, 'Anna');" class="techintcba">Techint Cordoba</button></li>
-					<li><button onclick="topFunction(); openCity(event, 'Torres');" class="leloir">Leloir</button></li>
-					<li><button onclick="topFunction(); openCity(event, 'Dave');" class="libertador">Libertador</button></li>
-					<li><button onclick="topFunction(); openCity(event, 'Arturo');" class="bolivar">Bolivar</button></li>
+					<li><button id="defaultOpen" onclick="openCity(event, 'Paco');" class="all">Todos los trabajos</button></li>
+					<li><button onclick="openCity(event, 'London');" class="techintvm">Techint Vaca Muerta</button></li>
+					<li><button onclick="openCity(event, 'Tokyo');" class="boca">Oficinas BOCA</button></li>
+					<li><button onclick="openCity(event, 'Jopo');" class="cesar">Cesar</button></li>
+					<li><button onclick="openCity(event, 'Poco');" class="directorio">Directorio </button></li>
+					<li><button onclick="openCity(event, 'Madrid');" class="siderca">Siderca Carlos Pellegrini</button></li>
+					<li><button onclick="openCity(event, 'Anna');" class="techintcba">Techint Cordoba</button></li>
+					<li><button onclick="openCity(event, 'Torres');" class="leloir">Leloir</button></li>
+					<li><button onclick="openCity(event, 'Dave');" class="libertador">Libertador</button></li>
+					<li><button onclick="openCity(event, 'Arturo');" class="bolivar">Bolivar</button></li>
+					<li><button onclick="openCity(event, 'Alain');" class="alain">Alberdi</button></li>
+					<li><button onclick="openCity(event, 'Bert');" class="bert">Kalciyan</button></li>
+					<li><button onclick="openCity(event, 'Former');" class="former">Varios</button></li>
 				</ul>
 			</div>
 			<div id="Paco" class="tabcontent tabcontent2">
@@ -55,10 +58,6 @@
 						<img id="" src="img/15.2.jpg" alt="" class="zoom"  onclick="onClick(this)">
 						<img id="" src="img/15.3.jpg" alt="" class="zoom"  onclick="onClick(this)">
 						<img id="" src="img/15.5.jpg" alt="" class="zoom"  onclick="onClick(this)">
-						<img id="" src="img/siderca carlos pellegrini (1).jpg" alt="" class="zoom"  onclick="onClick(this)">
-						<img id="" src="img/siderca carlos pellegrini (2).jpg" alt="" class="zoom"  onclick="onClick(this)">
-						<img id="" src="img/siderca carlos pellegrini (3).jpg" alt="" class="zoom"  onclick="onClick(this)">
-						<img id="" src="img/siderca carlos pellegrini (4).jpg" alt="" class="zoom"  onclick="onClick(this)">
 						<img id="" src="img/siderca carlos pellegrini (5).jpg" alt="" class="zoom"  onclick="onClick(this)">
 						<img id="" src="img/siderca carlos pellegrini (6).jpg" alt="" class="zoom"  onclick="onClick(this)">
 						<img id="" src="img/siderca carlos pellegrini (7).jpg" alt="" class="zoom"  onclick="onClick(this)">
@@ -132,6 +131,78 @@
 						<img id="" src="img/libertador (13).jpg" alt="" class="zoom" onclick="onClick(this)">
 						<img id="" src="img/libertador (14).jpg" alt="" class="zoom" onclick="onClick(this)">
 						<img id="" src="img/libertador (15).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img id="" src="img/alberdi (1).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img id="" src="img/alberdi (2).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img id="" src="img/alberdi (3).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img id="" src="img/alberdi (4).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img id="" src="img/alberdi (5).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img id="" src="img/alberdi (6).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img id="" src="img/alberdi (7).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img id="" src="img/alberdi (8).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img id="" src="img/alberdi (9).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img id="" src="img/alberdi (10).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img id="" src="img/alberdi (11).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img id="" src="img/alberdi (12).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img id="" src="img/alberdi (13).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img id="" src="img/alberdi (14).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img id="" src="img/alberdi (15).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img id="" src="img/alberdi (16).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img id="" src="img/alberdi (17).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img id="" src="img/kalciyan (1).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img id="" src="img/kalciyan (2).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img id="" src="img/kalciyan (3).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img id="" src="img/kalciyan (4).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img id="" src="img/kalciyan (5).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (1).jpeg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (1).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (2).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (3).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (4).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (5).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (6).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (7).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (8).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (9).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (10).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (11).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (12).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (13).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (14).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (15).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (16).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (17).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (18).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (19).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (20).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (21).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (22).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (23).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (24).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (25).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (26).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (27).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (28).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (29).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (30).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (31).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (32).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (33).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (34).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (35).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (36).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (37).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (38).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (39).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (40).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (41).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (42).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (43).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (44).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (45).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (46).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (47).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (48).jpg" alt="" class="zoom" onclick="onClick(this)">
+						<img src="img/varios (49).jpg" alt="" class="zoom" onclick="onClick(this)">
 						<img id="" src="img/hogar2.png" alt="" class="zoom" onclick="onClick(this)">
 						<img id="" src="img/hogar3.png" alt="" class="zoom" onclick="onClick(this)">
 						<img id="" src="img/cocina 2.jpg" alt="" class="zoom" onclick="onClick(this)">
@@ -192,10 +263,6 @@
 			<div id="Madrid" class="tabcontent2">
 				<h3>Siderca Carlos Pellegrini</h3>
 				<div class="content2 kl">
-					<img src="img/siderca carlos pellegrini (1).jpg" alt="" class="zoom" onclick="onClick(this)">
-					<img src="img/siderca carlos pellegrini (2).jpg" alt="" class="zoom" onclick="onClick(this)">
-					<img src="img/siderca carlos pellegrini (3).jpg" alt="" class="zoom" onclick="onClick(this)">
-					<img src="img/siderca carlos pellegrini (4).jpg" alt="" class="zoom" onclick="onClick(this)">
 					<img src="img/siderca carlos pellegrini (5).jpg" alt="" class="zoom" onclick="onClick(this)">
 					<img src="img/siderca carlos pellegrini (6).jpg" alt="" class="zoom" onclick="onClick(this)">
 					<img src="img/siderca carlos pellegrini (7).jpg" alt="" class="zoom" onclick="onClick(this)">
@@ -242,20 +309,20 @@
 				<h3>Libertador</h3>
 				<div class="content2 kl">
 					<img id="" src="img/libertador (1).jpg" alt="" class="zoom" onclick="onClick(this)">
-						<img id="" src="img/libertador (2).jpg" alt="" class="zoom" onclick="onClick(this)">
-						<img id="" src="img/libertador (3).jpg" alt="" class="zoom" onclick="onClick(this)">
-						<img id="" src="img/libertador (4).jpg" alt="" class="zoom" onclick="onClick(this)">
-						<img id="" src="img/libertador (5).jpg" alt="" class="zoom" onclick="onClick(this)">
-						<img id="" src="img/libertador (6).jpg" alt="" class="zoom" onclick="onClick(this)">
-						<img id="" src="img/libertador (7).jpg" alt="" class="zoom" onclick="onClick(this)">
-						<img id="" src="img/libertador (8).jpg" alt="" class="zoom" onclick="onClick(this)">
-						<img id="" src="img/libertador (9).jpg" alt="" class="zoom" onclick="onClick(this)">
-						<img id="" src="img/libertador (10).jpg" alt="" class="zoom" onclick="onClick(this)">
-						<img id="" src="img/libertador (11).jpg" alt="" class="zoom" onclick="onClick(this)">
-						<img id="" src="img/libertador (12).jpg" alt="" class="zoom" onclick="onClick(this)">
-						<img id="" src="img/libertador (13).jpg" alt="" class="zoom" onclick="onClick(this)">
-						<img id="" src="img/libertador (14).jpg" alt="" class="zoom" onclick="onClick(this)">
-						<img id="" src="img/libertador (15).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/libertador (2).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/libertador (3).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/libertador (4).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/libertador (5).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/libertador (6).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/libertador (7).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/libertador (8).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/libertador (9).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/libertador (10).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/libertador (11).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/libertador (12).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/libertador (13).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/libertador (14).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/libertador (15).jpg" alt="" class="zoom" onclick="onClick(this)">
 				</div>
 			</div>
 			<div id="Arturo" class="tabcontent2">
@@ -263,6 +330,93 @@
 				<div class="content2 kl">
 					<img id="" src="img/bolivar (1).jpg" alt="" class="zoom" onclick="onClick(this)">
 					<img id="" src="img/bolivar (2).jpg" alt="" class="zoom" onclick="onClick(this)">
+				</div>
+			</div>
+			<div id="Alain" class="tabcontent2">
+				<h3>Alberdi</h3>
+				<div class="content2 kl">
+					<img id="" src="img/alberdi (1).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/alberdi (2).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/alberdi (3).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/alberdi (4).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/alberdi (5).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/alberdi (6).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/alberdi (7).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/alberdi (8).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/alberdi (9).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/alberdi (10).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/alberdi (11).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/alberdi (12).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/alberdi (13).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/alberdi (14).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/alberdi (15).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/alberdi (16).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/alberdi (17).jpg" alt="" class="zoom" onclick="onClick(this)">
+				</div>
+			</div>
+			<div id="Bert" class="tabcontent2">
+				<h3>Kalciyan</h3>
+				<div class="content2 kl">
+					<img id="" src="img/kalciyan (1).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/kalciyan (2).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/kalciyan (3).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/kalciyan (4).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img id="" src="img/kalciyan (5).jpg" alt="" class="zoom" onclick="onClick(this)">
+				</div>
+			</div>
+			<div id="Former" class="tabcontent2">
+				<h3>Varios</h3>
+				<div class="content2 kl">
+					<img src="img/varios (1).jpeg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (1).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (2).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (3).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (4).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (5).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (6).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (7).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (8).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (9).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (10).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (11).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (12).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (13).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (14).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (15).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (16).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (17).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (18).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (19).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (20).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (21).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (22).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (23).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (24).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (25).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (26).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (27).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (28).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (29).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (30).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (31).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (32).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (33).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (34).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (35).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (36).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (37).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (38).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (39).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (40).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (41).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (42).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (43).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (44).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (45).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (46).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (47).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (48).jpg" alt="" class="zoom" onclick="onClick(this)">
+					<img src="img/varios (49).jpg" alt="" class="zoom" onclick="onClick(this)">
 				</div>
 			</div>
 			<div id="myModal" class="modal" onclick="this.style.display='none'">
