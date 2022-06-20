@@ -232,6 +232,9 @@ h3{
 }
 
 /*Trabajos*/
+.tabcontent {
+    display: none;
+}
 .zoom {
     border-radius: 5px;
     cursor: pointer;
@@ -307,7 +310,7 @@ h3{
 .gallery {
 	padding: 1rem;
 	display: grid;
-	grid-template-columns: repeat(13, 30vw);
+	grid-template-columns: repeat(8, 30vw);
 	grid-template-rows: 1fr;
 	grid-column-gap: 1rem;
 	grid-row-gap: 1rem;
@@ -435,7 +438,7 @@ li {
 .miniature button:hover{
     cursor: pointer;
 }
-.tabcontent {
+.tabcontentinterior {
     display: block;
     margin: 10px auto;
     border-top: none;
@@ -459,7 +462,6 @@ li {
     width: calc(100% - 30px);
     background-color: #848688;
     padding: 0 15px;
-    
 }
 .scroll::-webkit-scrollbar{
     -webkit-appearance: none;
@@ -478,10 +480,9 @@ li {
     align-items: center;
     align-content: space-around;
 }
-#myBtn, #myBtn2{
+#myBtn, #myBtn3, #myBtn2{
     display: block; 
     position: fixed; 
-    bottom: 225px; 
     right: 10px; 
     z-index: 1;
     border: none; 
@@ -491,41 +492,38 @@ li {
     cursor: pointer; 
     padding: 15px; 
     border-radius: 10px; 
-    font-size: 12px; 
+    font-size: 15px;
 }
-#myBtn3 {
-    display: block; 
-    position: fixed; 
+#myBtn{
+    bottom: 225px;
+}
+#myBtn3{
     bottom: 155px;
-    right: 10px;
-    z-index: 1; 
-    border: none; 
-    outline: none; 
-    background-color: #F5874F;
-    color: black; 
-    cursor: pointer; 
-    padding: 14px; 
-    border-radius: 10px; 
-    font-size: 12px; 
 }
+#myBtn2{
+    bottom: 90px;
+    font-size: 24px;
+}
+
 #myBtn img, #myBtn2 img, #myBtn3 img{
     width: 30px;
     height: auto;
     color:#000000;
 }
-#myBtn span, #myBtn2 span, #myBtn3 span{
+#myBtn span, #myBtn3 span{
     display: none;
     color: white;
     font-size: 20px;
 }
-#myBtn:hover span, #myBtn2:hover span, #myBtn3:hover span {
+#myBtn:hover span, #myBtn3:hover span {
     display: block;
 }
-#myBtn:hover img, #myBtn2:hover img, #myBtn3:hover img{
+#myBtn:hover img, #myBtn3:hover img{
     display: none;
 }
 #myBtn:hover, #myBtn2:hover, #myBtn3:hover{
     background-color: #be6d44;
+    color: #ffffff;
 }
 
 /*@media screen and (max-width: 800px) {
