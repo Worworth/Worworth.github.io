@@ -30,6 +30,19 @@ main{
 h2{
     color:white;
 }
+.construccion{
+    color: #000000;
+    font-size: 50px;
+    text-align: center;
+}
+.fabricamueble{
+    background: url(../img/fabrica-4-sj-muebles.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 80vh;
+
+}
 h3{
     color: #ffffff;
     font-size: 35px;
@@ -406,6 +419,34 @@ li {
 .former{
     background: url(../img/varios\ \(15\).jpg);
 }
+.bertani{
+    background: url(../img/techint\ catalinas\ \(5\).jpg);
+}
+.bertaculo{
+    background: url(../img/trenes2.jpeg);
+}
+.ejecutivas{
+    background: url(../img/EJECUTIVAS/EJECUTIVAS.jpg);
+}
+.cajeras{
+    background: url(../img/CAJERAS/CAJERAS.jpg);
+}
+.industriales{
+    background: url(../img/INDUSTRIALES/INDUSTRIALES.jpg);
+}
+.operativas{
+    background: url(../img/OPERATIVAS/OPERATIVAS.jpg);
+}
+.taburetes{
+    background: url(../img/TABURETES/TABURETES.jpg);
+}
+.tandem{
+    background: url(../img/TANDEM/TANDEM.jpg);
+}
+.variedad{
+    background: url(../img/VISITA/VISITA.jpg);
+}
+
 .techintvm,
 .boca, 
 .cesar, 
@@ -417,7 +458,16 @@ li {
 .bolivar,
 .alain,
 .bert,
-.former{
+.former,
+.bertani,
+.bertaculo,
+.ejecutivas,
+.cajeras,
+.industriales,
+.operativas,
+.taburetes,
+.tandem,
+.variedad{
     color: transparent;
 }
 .techintvm:hover, 
@@ -431,7 +481,16 @@ li {
 .bolivar:hover,
 .alain:hover,
 .bert:hover,
-.former:hover{
+.former:hover,
+.bertani:hover,
+.bertaculo:hover,
+.ejecutivas:hover,
+.cajeras:hover,
+.industriales:hover,
+.operativas:hover,
+.taburetes:hover,
+.tandem:hover,
+.variedad:hover{
     color: white;
     opacity: 0.5;
 }
@@ -488,7 +547,7 @@ li {
     border: none; 
     outline: none; 
     background-color: #F5874F;
-    color: black; 
+    color: #000000; 
     cursor: pointer; 
     padding: 15px; 
     border-radius: 10px; 
@@ -508,7 +567,7 @@ li {
 #myBtn img, #myBtn2 img, #myBtn3 img{
     width: 30px;
     height: auto;
-    color:#000000;
+    color:#ffffff;
 }
 #myBtn span, #myBtn3 span{
     display: none;
