@@ -523,7 +523,7 @@ li {
 .tabcontent2 {
     display: none;
     width: calc(100% - 30px);
-    background-color: #848688;
+    background-color:#727376 ;/*#848688*/
     padding: 0 15px;
 }
 .scroll::-webkit-scrollbar{
