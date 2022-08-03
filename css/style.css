@@ -314,7 +314,7 @@ h3{
 }
 .miniature{
     height: 100%;
-    background-color: #848688;
+    background-color: #4b4a4a;
     margin-top: 20px;
     font-size: 17px;
 }
@@ -523,8 +523,9 @@ li {
 .tabcontent2 {
     display: none;
     width: calc(100% - 30px);
-    background-color:#727376 ;/*#848688*/
+    background-color:#4b4a4a ;/*#848688*/
     padding: 0 15px;
+    margin: 10px auto;
 }
 .scroll::-webkit-scrollbar{
     -webkit-appearance: none;
