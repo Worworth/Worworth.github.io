@@ -47,6 +47,7 @@ h2{
 }
 .construccion{
     color: #000000;
+    background-color: #ffffff;
     font-size: 50px;
     text-align: center;
 }
@@ -57,6 +58,12 @@ h2{
     background-size: cover;
     height: 80vh;
 
+}
+.copy{
+    color: #000000;
+    font-size: 17px;
+    background-color: #ffffff;
+    text-align: center;
 }
 h3{
     color: #ffffff;
@@ -287,7 +294,7 @@ h3{
     margin: auto;
     display: block;
     width: 80%;
-    max-width: 700px;
+    max-width: 1000px;
 }
  #caption {
     margin: auto;
@@ -604,6 +611,7 @@ li {
     background-color: #be6d44;
     color: #ffffff;
 }
+/*complementos*/
 
 /*@media screen and (max-width: 800px) {
     .column {
