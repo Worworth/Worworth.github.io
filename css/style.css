@@ -11,8 +11,6 @@ header{
     width: 50%;
     height: 50%;
     margin: 20px 0;
-    
-
 }
 .header img{
     width: 75%;
@@ -20,9 +18,8 @@ header{
 }
 .header2{
     width: 25%;
-    height: 55%;
-    margin: 20px 0;
-    
+    height: 50%;
+    margin: 20px 0; 
 }
 .header2 img{
     width: 100%;
@@ -69,6 +66,7 @@ h3{
     color: #ffffff;
     font-size: 35px;
     text-align: center;
+    padding-top: 10px;
 }
 .topnav{
     width: 100%;
@@ -763,12 +761,9 @@ input[type=submit]:hover {
 
 @media screen and (min-width:60em){
     
-    header{
-        height: 90px;
-    }
-    .header{
-        width: 25%;
-        height: 65%;
+    .header2{
+        width: 20%;
+        height: 50%;
     }
     /*Entrada*/
     .empezar p{
@@ -807,13 +802,9 @@ input[type=submit]:hover {
 }
 
 @media screen and (min-width:1440px){
-    
-    header{
-        height: 120px;
-    }
-    .header{
-        width: 25%;
-        height: 75%;
+    .header2{
+        width: 15%;
+        height: 55%;
     }
     /*Trabajos*/
     .kl img{
