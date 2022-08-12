@@ -67,6 +67,7 @@ h3{
     font-size: 35px;
     text-align: center;
     padding-top: 10px;
+    font-family: 'Poppins', sans-serif;
 }
 .topnav{
     width: 100%;
@@ -337,6 +338,7 @@ h3{
     background-color: #4b4a4a;
     margin-top: 20px;
     font-size: 17px;
+    font-family: 'Poppins', sans-serif;
 }
 .gallery {
 	padding: 1rem;
