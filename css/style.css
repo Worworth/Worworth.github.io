@@ -2,6 +2,7 @@
 header{
     width: 100%;
     height: 105px;
+    margin: 10px 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -10,7 +11,7 @@ header{
 .header{
     width: 35%;
     height: 50%;
-    margin: 20px 0;
+    margin: 20px 24px;
 }
 .header img{
     width: 100%;
@@ -19,7 +20,7 @@ header{
 .header2{
     width: 35%;
     height: 50%;
-    margin: 20px 0;
+    margin: 20px 5%;
 }
 .header2 img{
     width: 100%;
@@ -83,8 +84,10 @@ h3{
     text-align: center; 
     padding: 10px 16px;
     float: left;
-    font-size: 25px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+
 }
 .topnav a:hover{
     background-color: #b9935a4d;
@@ -181,8 +184,8 @@ h3{
 }
 .nosotros div p{
     font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 25px 25px 20px 25px;
+    font-family: 'Poppins', sans-serif;
+    padding: 25px 0 25px 8%;
 }
 .nosotros img{
     margin: 2.5% 7%;
@@ -244,14 +247,13 @@ h3{
 }
 .listaempre{
     width: 85%;
-    text-align:center;
     color:white;
     background-color:#4b4a4a;
-    padding: 10px;
+    padding: 10px 10px 10px 1.5%;
     border-bottom-width: 10px;
     -webkit-border-radius: 10px 0px 0 100px;
     border-radius: 0 10px 100px 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 .listaempresas{
     background-color: #4b4a4a;
@@ -261,7 +263,7 @@ h3{
     color: white;
     padding: 1.5%;
     line-height: 30px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 
 /*Trabajos*/
